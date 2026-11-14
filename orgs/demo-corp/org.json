@@ -1,0 +1,67 @@
+{
+  "id": "demo-corp",
+  "name": "Demo Corp (CORP domain)",
+  "description": "The organization the soc-triage model was fine-tuned on. Knowledge files live in the repo's original rag_docs/ and ir_docs/ folders.",
+
+  "knowledge": {
+    "triage": ["../../rag_docs/*.md"],
+    "ir": ["../../rag_docs/playbook_*.md", "../../ir_docs/*.md"]
+  },
+
+  "disposition": {
+    "close_threshold": 0.85,
+    "confidence_score": {"High": 0.9, "Medium": 0.7, "Low": 0.5}
+  },
+
+  "assets": {
+    "default": "medium",
+    "rules": [
+      {"host_prefix": ["DC-"], "level": "critical", "tier0": true},
+      {"device_group_contains": ["domain controller"], "level": "critical", "tier0": true},
+      {"host_prefix": ["LAB-"], "level": "low"},
+      {"device_group_prefix": ["lab", "test"], "level": "low"},
+      {"device_group": ["Database Servers", "File Servers", "Backup Servers", "Admin Jump Servers",
+                        "Internet-Facing Web Servers", "Security Tooling Servers", "Finance Workstations"],
+       "level": "high"}
+    ]
+  },
+
+  "identity": {
+    "roster_file": "../../rag_docs/admin_roster.md",
+    "account_column": "Account",
+    "status_column": "Status / notes",
+    "disabled_marker": "DISABLED",
+    "privileged_prefixes": ["adm-"],
+    "tier0_accounts": ["krbtgt", "domain admins", "enterprise admins", "administrator"]
+  },
+
+  "severity": {
+    "levels": {"SEV1": 7, "SEV2": 5, "SEV3": 3}
+  },
+
+  "escalation_policy": [
+    {"id": "case", "action": "open_case", "when": {"always": true}, "reason": "Every incident gets a case"},
+    {"id": "war-room", "action": "create_channel", "when": {"severity_at_most": "SEV3"}, "reason": "War-room for SEV1-SEV3"},
+    {"id": "summary", "action": "post_summary", "when": {"severity_at_most": "SEV3"}, "reason": "Brief the war-room"},
+    {"id": "page-ir", "action": "page_oncall", "target": "Alice Morgan (ir-primary)",
+     "when": {"severity_at_most": "SEV2"}, "reason": "SEV1-SEV2 require paging IR on-call"},
+    {"id": "ciso", "action": "add_stakeholder", "target": "CISO (Rahul Desai)",
+     "when": {"severity_at_most": "SEV1"}, "reason": "SEV1 incident"},
+    {"id": "legal", "action": "add_stakeholder", "target": "Legal & Privacy Officer (Maria Lopez)",
+     "when": {"signals_any": ["exfiltration"]}, "reason": "Suspected data exfiltration"},
+    {"id": "insurer", "action": "add_stakeholder", "target": "Cyber-insurance carrier",
+     "when": {"signals_any": ["destructive"]}, "reason": "Destructive/ransomware incident"},
+    {"id": "retainer", "action": "add_stakeholder", "target": "External IR retainer partner",
+     "when": {"severity_at_most": "SEV1", "host_prefix_any": ["DC-"]}, "reason": "SEV1 with a domain controller"},
+    {"id": "identity", "action": "add_stakeholder", "target": "Identity team lead (Kevin Miller)",
+     "when": {"signals_any": ["credential_theft", "disabled_account"]}, "reason": "Credential theft / privileged account"}
+  ],
+
+  "actuators": {
+    "chat": {"type": "mock"},
+    "pager": {"type": "mock"},
+    "case": {"type": "mock"}
+  },
+
+  "ingest": {"api_key_env": "SOC_INGEST_KEY"}
+}

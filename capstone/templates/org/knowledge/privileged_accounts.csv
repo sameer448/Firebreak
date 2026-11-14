@@ -1,0 +1,3 @@
+account,owner,team,approved_scope,status
+adm-example,Example Owner,Server Operations,Application servers from the jump host only,Active
+adm-leaver,Former Employee,Server Operations,none,DISABLED: owner offboarded; any activity is a security incident

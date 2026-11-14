@@ -1,0 +1,1261 @@
+split,scenario,rule,host,mitre,verdict,has_rag_context
+train,defender_benign,defender,WS-LGL-182,T1562.001,Benign True Positive,False
+train,discovery_benign,recon,WS-IT-031,T1087.002,Benign True Positive,False
+train,webshell_mal,webchild,SRV-WEB08,T1505.003,True Positive,True
+train,psexec_mal,remsvc,WS-ENG-025,T1569.002,True Positive,False
+train,rclone_benign,cloudsync,SRV-BKP06,T1567.002,Benign True Positive,False
+train,schtask_benign,schtask,WS-MKT-059,T1053.005,Benign True Positive,False
+train,office_child_splwow,officechild,WS-SLS-232,T1204.002,False Positive,False
+train,lsass_werfault,lsass,SRV-FILE05,T1003.001,False Positive,False
+train,psexec_benign,remsvc,JMP-ADM01,T1569.002,Benign True Positive,False
+train,webshell_mal,webchild,SRV-WEB04,T1505.003,True Positive,False
+train,office_child_splwow,officechild,WS-FIN-234,T1204.002,False Positive,False
+train,rundll32_mal,rundll32,WS-HR-027,T1218.011,True Positive,False
+train,schtask_benign,schtask,WS-FIN-076,T1053.005,Benign True Positive,False
+train,office_child_addin,officechild,WS-FIN-037,T1204.002,False Positive,False
+train,internal_tool_task,schtask,WS-HR-047,T1053.005,Benign True Positive,False
+train,ps_encoded_ambiguous,encps,WS-ENG-110,T1087.002,Needs Investigation,True
+train,webshell_mal,webchild,SRV-WEB11,T1505.003,True Positive,False
+train,teamviewer_user,rat,WS-SLS-158,T1219,Needs Investigation,False
+train,rundll32_benign,rundll32,WS-FIN-201,T1218.011,False Positive,True
+train,ps_encoded_sccm,encps,WS-MKT-038,T1059.001,Benign True Positive,False
+train,webshell_mal,webchild,SRV-WEB01,T1505.003,True Positive,False
+train,office_child_fake_splwow,officechild,WS-MKT-195,T1204.002,True Positive,False
+train,ps_encoded_office,encps,WS-SLS-011,T1059.001,True Positive,True
+train,rclone_mal,cloudsync,SRV-FILE12,T1567.002,True Positive,False
+train,certutil_hashfile,certutil,WS-IT-048,T1218,False Positive,False
+train,discovery_mal,recon,WS-ENG-237,T1087.002,True Positive,False
+train,certutil_download,certutil,WS-FIN-167,T1105,True Positive,False
+train,office_child_addin,officechild,WS-FIN-024,T1204.002,False Positive,False
+train,lsass_werfault,lsass,SRV-SQL09,T1003.001,False Positive,False
+train,office_child_addin,officechild,WS-FIN-218,T1204.002,False Positive,True
+train,rat_mal,rat,WS-FIN-033,T1219,True Positive,False
+train,ps_encoded_sccm,encps,WS-HR-226,T1059.001,Benign True Positive,False
+train,sql_cmd,svcshell,SRV-SQL07,T1059.003,Needs Investigation,False
+train,defender_mal,defender,WS-FIN-245,T1562.001,True Positive,False
+train,runkey_mal,runkey,WS-SLS-113,T1547.001,True Positive,False
+train,ps_encoded_office,encps,WS-HR-223,T1059.001,True Positive,False
+train,rclone_wrong_remote,cloudsync,SRV-BKP06,T1567.002,True Positive,False
+train,runkey_masq,runkey,WS-LGL-070,T1547.001,True Positive,False
+train,defender_mal,defender,WS-MKT-210,T1562.001,True Positive,False
+train,schtask_mal,schtask,WS-MKT-119,T1053.005,True Positive,False
+train,ps_encoded_sccm,encps,WS-FIN-092,T1059.001,Benign True Positive,False
+train,lsass_fake_werfault,lsass,WS-HR-167,T1003.001,True Positive,True
+train,runkey_benign,runkey,WS-FIN-187,T1547.001,Benign True Positive,False
+train,rclone_benign,cloudsync,SRV-BKP06,T1567.002,Benign True Positive,False
+train,rundll32_benign,rundll32,WS-HR-089,T1218.011,False Positive,False
+train,office_child_mal,officechild,WS-MKT-002,T1204.002,True Positive,False
+train,lsass_procdump,lsass,WS-SLS-042,T1003.001,True Positive,False
+train,psexec_ambiguous,remsvc,WS-SLS-213,T1569.002,Needs Investigation,True
+train,defender_benign,defender,WS-FIN-030,T1562.001,Benign True Positive,False
+train,ransom_mal,massfile,SRV-FILE01,T1486,True Positive,True
+train,lsass_procdump,lsass,WS-MKT-227,T1003.001,True Positive,False
+train,rundll32_benign,rundll32,WS-ENG-006,T1218.011,False Positive,False
+train,webshell_mal,webchild,SRV-WEB04,T1505.003,True Positive,False
+train,internal_tool_task,schtask,WS-HR-042,T1053.005,Benign True Positive,False
+train,office_child_addin,officechild,WS-FIN-090,T1204.002,False Positive,True
+train,teamviewer_user,rat,WS-FIN-042,T1219,Needs Investigation,False
+train,ps_encoded_fake_sccm,encps,WS-ENG-043,T1059.001,True Positive,False
+train,teamviewer_user,rat,WS-LGL-107,T1219,Needs Investigation,False
+train,defender_benign,defender,WS-MKT-006,T1562.001,Benign True Positive,False
+train,teamviewer_user,rat,WS-LGL-090,T1219,Needs Investigation,False
+train,ps_encoded_office,encps,WS-HR-192,T1059.001,True Positive,True
+train,certutil_download,certutil,WS-LGL-203,T1105,True Positive,False
+train,sql_cmd,svcshell,SRV-SQL10,T1059.003,Needs Investigation,False
+train,vss_benign,vss,SRV-SQL07,T1490,False Positive,True
+train,rclone_mal,cloudsync,SRV-FILE07,T1567.002,True Positive,False
+train,certutil_hashfile,certutil,WS-IT-041,T1218,False Positive,False
+train,rclone_wrong_remote,cloudsync,SRV-BKP02,T1567.002,True Positive,True
+train,rclone_benign,cloudsync,SRV-BKP03,T1567.002,Benign True Positive,True
+train,webshell_mal,webchild,SRV-WEB12,T1505.003,True Positive,False
+train,psexec_benign,remsvc,JMP-ADM01,T1569.002,Benign True Positive,False
+train,ps_encoded_fake_sccm,encps,WS-LGL-039,T1059.001,True Positive,False
+train,runkey_mal,runkey,WS-LGL-238,T1547.001,True Positive,True
+train,vss_mal,vss,SRV-FILE12,T1490,True Positive,False
+train,defender_mal,defender,WS-LGL-135,T1562.001,True Positive,True
+train,ransom_mal,massfile,SRV-FILE11,T1486,True Positive,True
+train,ps_encoded_ambiguous,encps,WS-MKT-236,T1087.002,Needs Investigation,False
+train,discovery_mal,recon,WS-LGL-134,T1087.002,True Positive,True
+train,office_child_addin,officechild,WS-FIN-130,T1204.002,False Positive,False
+train,rat_mal,rat,WS-FIN-175,T1219,True Positive,False
+train,office_child_mal,officechild,WS-LGL-075,T1204.002,True Positive,True
+train,rclone_wrong_remote,cloudsync,SRV-BKP08,T1567.002,True Positive,False
+train,rclone_benign,cloudsync,SRV-BKP06,T1567.002,Benign True Positive,False
+train,internal_tool_task,schtask,WS-ENG-066,T1053.005,Benign True Positive,False
+train,lsass_procdump,lsass,WS-FIN-150,T1003.001,True Positive,True
+train,psexec_benign,remsvc,JMP-ADM03,T1569.002,Benign True Positive,False
+train,rclone_benign,cloudsync,SRV-BKP03,T1567.002,Benign True Positive,True
+train,vss_benign,vss,SRV-SQL11,T1490,False Positive,False
+train,lsass_fake_werfault,lsass,WS-FIN-060,T1003.001,True Positive,False
+train,ps_encoded_office,encps,WS-HR-186,T1059.001,True Positive,True
+train,teamviewer_user,rat,WS-LGL-150,T1219,Needs Investigation,False
+train,office_child_mal,officechild,WS-ENG-122,T1204.002,True Positive,False
+train,runkey_benign,runkey,WS-FIN-055,T1547.001,Benign True Positive,False
+train,ps_encoded_sccm,encps,WS-FIN-165,T1059.001,Benign True Positive,False
+train,sql_cmd,svcshell,SRV-SQL04,T1059.003,Benign True Positive,True
+train,defender_benign,defender,WS-SLS-183,T1562.001,Benign True Positive,False
+train,ransom_mal,massfile,SRV-FILE03,T1486,True Positive,False
+train,office_child_fake_splwow,officechild,WS-MKT-203,T1204.002,True Positive,False
+train,runkey_benign,runkey,WS-FIN-102,T1547.001,Benign True Positive,False
+train,ps_encoded_office,encps,WS-SLS-250,T1059.001,True Positive,True
+train,runkey_mal,runkey,WS-HR-162,T1547.001,True Positive,True
+train,defender_mal,defender,WS-MKT-194,T1562.001,True Positive,False
+train,schtask_mal,schtask,WS-ENG-236,T1053.005,True Positive,True
+train,office_child_splwow,officechild,WS-FIN-028,T1204.002,False Positive,True
+train,schtask_benign,schtask,WS-MKT-175,T1053.005,Benign True Positive,False
+train,teamviewer_user,rat,WS-HR-058,T1219,Needs Investigation,False
+train,lsass_fake_werfault,lsass,WS-ENG-190,T1003.001,True Positive,False
+train,office_child_addin,officechild,WS-FIN-010,T1204.002,False Positive,False
+train,ps_encoded_fake_sccm,encps,WS-ENG-206,T1059.001,True Positive,True
+train,ps_encoded_sccm,encps,WS-FIN-161,T1059.001,Benign True Positive,False
+train,schtask_mal,schtask,WS-MKT-021,T1053.005,True Positive,False
+train,teamviewer_user,rat,WS-FIN-014,T1219,Needs Investigation,False
+train,rclone_wrong_remote,cloudsync,SRV-BKP08,T1567.002,True Positive,False
+train,ps_encoded_office,encps,WS-LGL-187,T1059.001,True Positive,False
+train,psexec_benign,remsvc,JMP-ADM12,T1569.002,Benign True Positive,False
+train,lsass_werfault,lsass,SRV-APP08,T1003.001,False Positive,False
+train,schtask_benign,schtask,WS-MKT-110,T1053.005,Benign True Positive,False
+train,rat_benign,rat,WS-IT-047,T1219,Benign True Positive,False
+train,schtask_benign,schtask,WS-MKT-084,T1053.005,Benign True Positive,False
+train,webshell_fp,webchild,SRV-APP04,T1505.003,False Positive,False
+train,runkey_mal,runkey,WS-ENG-207,T1547.001,True Positive,False
+train,office_child_addin,officechild,WS-FIN-022,T1204.002,False Positive,False
+train,defender_benign,defender,WS-LGL-205,T1562.001,Benign True Positive,False
+train,runkey_masq,runkey,WS-MKT-083,T1547.001,True Positive,False
+train,psexec_mal,remsvc,WS-SLS-050,T1569.002,True Positive,True
+train,office_child_splwow,officechild,WS-MKT-104,T1204.002,False Positive,False
+train,schtask_mal,schtask,WS-ENG-124,T1053.005,True Positive,False
+train,internal_tool_task,schtask,WS-SLS-018,T1053.005,Benign True Positive,False
+train,lsass_werfault,lsass,SRV-APP11,T1003.001,False Positive,True
+train,office_child_fake_splwow,officechild,WS-ENG-165,T1204.002,True Positive,False
+train,schtask_mal,schtask,WS-LGL-068,T1053.005,True Positive,False
+train,runkey_mal,runkey,WS-MKT-073,T1547.001,True Positive,False
+train,ps_encoded_ambiguous,encps,WS-FIN-074,T1087.002,Needs Investigation,False
+train,psexec_ambiguous,remsvc,WS-LGL-186,T1569.002,Needs Investigation,False
+train,psexec_ambiguous,remsvc,WS-HR-090,T1569.002,Needs Investigation,False
+train,internal_tool_task,schtask,WS-HR-206,T1053.005,Benign True Positive,False
+train,lsass_werfault,lsass,SRV-SQL02,T1003.001,False Positive,False
+train,webshell_fp,webchild,SRV-WEB01,T1505.003,False Positive,False
+train,office_child_mal,officechild,WS-LGL-119,T1204.002,True Positive,False
+train,defender_benign,defender,WS-SLS-045,T1562.001,Benign True Positive,False
+train,webshell_mal,webchild,SRV-WEB05,T1505.003,True Positive,True
+train,discovery_mal,recon,WS-LGL-115,T1087.002,True Positive,False
+train,defender_benign,defender,WS-LGL-121,T1562.001,Benign True Positive,False
+train,ransom_benign,massfile,SRV-FILE02,T1486,False Positive,True
+train,ps_encoded_sccm,encps,WS-MKT-214,T1059.001,Benign True Positive,False
+train,runkey_masq,runkey,WS-ENG-227,T1547.001,True Positive,True
+train,rat_mal,rat,WS-FIN-099,T1219,True Positive,False
+train,psexec_ambiguous,remsvc,WS-SLS-125,T1569.002,Needs Investigation,False
+train,vss_mal,vss,SRV-FILE12,T1490,True Positive,True
+train,schtask_mal,schtask,WS-LGL-239,T1053.005,True Positive,True
+train,runkey_masq,runkey,WS-ENG-105,T1547.001,True Positive,False
+train,vss_benign,vss,SRV-APP10,T1490,False Positive,False
+train,office_child_addin,officechild,WS-FIN-158,T1204.002,False Positive,False
+train,internal_tool_task,schtask,WS-ENG-241,T1053.005,Benign True Positive,False
+train,runkey_mal,runkey,WS-FIN-014,T1547.001,True Positive,True
+train,schtask_mal,schtask,WS-FIN-014,T1053.005,True Positive,False
+train,psexec_benign,remsvc,JMP-ADM12,T1569.002,Needs Investigation,True
+train,runkey_mal,runkey,WS-HR-004,T1547.001,True Positive,True
+train,discovery_mal,recon,WS-ENG-167,T1087.002,True Positive,False
+train,sql_cmd,svcshell,SRV-SQL12,T1059.003,Needs Investigation,False
+train,rat_mal,rat,WS-FIN-074,T1219,True Positive,False
+train,ransom_benign,massfile,SRV-FILE04,T1486,False Positive,False
+train,webshell_fp,webchild,SRV-WEB02,T1505.003,False Positive,False
+train,rundll32_mal,rundll32,WS-SLS-230,T1218.011,True Positive,False
+train,ps_encoded_fake_sccm,encps,WS-LGL-064,T1059.001,True Positive,False
+train,runkey_masq,runkey,WS-SLS-023,T1547.001,True Positive,True
+train,vss_benign,vss,SRV-SQL01,T1490,False Positive,False
+train,discovery_mal,recon,WS-MKT-100,T1087.002,True Positive,True
+train,discovery_mal,recon,WS-HR-135,T1087.002,True Positive,False
+train,office_child_fake_splwow,officechild,WS-FIN-211,T1204.002,True Positive,False
+train,certutil_hashfile,certutil,WS-IT-041,T1218,False Positive,False
+train,rat_benign,rat,WS-IT-027,T1219,Benign True Positive,False
+train,rat_benign,rat,WS-IT-058,T1219,Benign True Positive,False
+train,rundll32_mal,rundll32,WS-MKT-198,T1218.011,True Positive,False
+train,rundll32_benign,rundll32,WS-HR-143,T1218.011,False Positive,False
+train,internal_tool_task,schtask,WS-SLS-077,T1053.005,Benign True Positive,False
+train,certutil_hashfile,certutil,WS-IT-049,T1218,False Positive,False
+train,psexec_ambiguous,remsvc,WS-SLS-150,T1569.002,Needs Investigation,False
+train,lsass_fake_werfault,lsass,WS-LGL-182,T1003.001,True Positive,True
+train,teamviewer_user,rat,WS-FIN-053,T1219,Needs Investigation,False
+train,sql_cmd,svcshell,SRV-SQL11,T1059.003,Needs Investigation,False
+train,runkey_mal,runkey,WS-ENG-194,T1547.001,True Positive,False
+train,office_child_addin,officechild,WS-FIN-185,T1204.002,False Positive,False
+train,rundll32_mal,rundll32,WS-HR-035,T1218.011,True Positive,False
+train,vss_mal,vss,SRV-FILE11,T1490,True Positive,False
+train,psexec_benign,remsvc,JMP-ADM07,T1569.002,Benign True Positive,True
+train,rundll32_benign,rundll32,WS-FIN-038,T1218.011,False Positive,True
+train,psexec_ambiguous,remsvc,WS-MKT-115,T1569.002,Needs Investigation,False
+train,lsass_procdump,lsass,WS-SLS-037,T1003.001,True Positive,False
+train,internal_tool_task,schtask,WS-HR-232,T1053.005,Benign True Positive,False
+train,ps_encoded_office,encps,WS-HR-056,T1059.001,True Positive,False
+train,rclone_wrong_remote,cloudsync,SRV-BKP01,T1567.002,True Positive,False
+train,rclone_mal,cloudsync,SRV-FILE02,T1567.002,True Positive,False
+train,defender_benign,defender,WS-MKT-145,T1562.001,Benign True Positive,False
+train,discovery_mal,recon,WS-LGL-021,T1087.002,True Positive,True
+train,discovery_mal,recon,WS-FIN-109,T1087.002,True Positive,False
+train,defender_benign,defender,WS-HR-149,T1562.001,Benign True Positive,False
+train,lsass_procdump,lsass,WS-ENG-150,T1003.001,True Positive,False
+train,runkey_masq,runkey,WS-LGL-100,T1547.001,True Positive,False
+train,ps_encoded_sccm,encps,WS-LGL-174,T1059.001,Benign True Positive,False
+train,certutil_hashfile,certutil,WS-IT-003,T1218,False Positive,False
+train,rclone_wrong_remote,cloudsync,SRV-BKP01,T1567.002,True Positive,True
+train,rat_benign,rat,WS-IT-032,T1219,Benign True Positive,True
+train,certutil_hashfile,certutil,WS-IT-004,T1218,False Positive,False
+train,certutil_hashfile,certutil,WS-IT-019,T1218,False Positive,False
+train,rat_mal,rat,WS-FIN-027,T1219,True Positive,False
+train,runkey_benign,runkey,WS-SLS-174,T1547.001,Benign True Positive,False
+train,webshell_mal,webchild,SRV-WEB09,T1505.003,True Positive,False
+train,lsass_procdump,lsass,WS-HR-069,T1003.001,True Positive,False
+train,sql_cmd,svcshell,SRV-SQL01,T1059.003,Needs Investigation,False
+train,schtask_mal,schtask,WS-FIN-128,T1053.005,True Positive,True
+train,psexec_ambiguous,remsvc,WS-LGL-187,T1569.002,Needs Investigation,True
+train,certutil_download,certutil,WS-SLS-112,T1105,True Positive,False
+train,rat_mal,rat,WS-FIN-152,T1219,True Positive,False
+train,lsass_werfault,lsass,SRV-SQL04,T1003.001,False Positive,False
+train,webshell_fp,webchild,SRV-APP04,T1505.003,False Positive,False
+train,schtask_mal,schtask,WS-LGL-100,T1053.005,True Positive,False
+train,rclone_benign,cloudsync,SRV-BKP04,T1567.002,Benign True Positive,False
+train,sql_cmd,svcshell,SRV-SQL05,T1059.003,Needs Investigation,False
+train,lsass_werfault,lsass,SRV-APP01,T1003.001,False Positive,False
+train,psexec_benign,remsvc,JMP-ADM02,T1569.002,Needs Investigation,True
+train,vss_mal,vss,SRV-FILE12,T1490,True Positive,True
+train,rclone_mal,cloudsync,SRV-FILE09,T1567.002,True Positive,False
+train,vss_benign,vss,SRV-FILE04,T1490,False Positive,True
+train,webshell_fp,webchild,SRV-WEB09,T1505.003,False Positive,True
+train,rclone_mal,cloudsync,SRV-FILE02,T1567.002,True Positive,False
+train,runkey_masq,runkey,WS-SLS-058,T1547.001,True Positive,False
+train,ps_encoded_office,encps,WS-LGL-111,T1059.001,True Positive,False
+train,schtask_mal,schtask,WS-LGL-010,T1053.005,True Positive,True
+train,rclone_wrong_remote,cloudsync,SRV-BKP04,T1567.002,True Positive,True
+train,ps_encoded_office,encps,WS-SLS-186,T1059.001,True Positive,False
+train,office_child_fake_splwow,officechild,WS-FIN-237,T1204.002,True Positive,False
+train,certutil_download,certutil,WS-MKT-161,T1105,True Positive,True
+train,psexec_benign,remsvc,JMP-ADM09,T1569.002,Needs Investigation,True
+train,sql_cmd,svcshell,SRV-SQL05,T1059.003,Needs Investigation,False
+train,webshell_fp,webchild,SRV-WEB02,T1505.003,False Positive,True
+train,rclone_wrong_remote,cloudsync,SRV-BKP08,T1567.002,True Positive,True
+train,vss_mal,vss,SRV-FILE12,T1490,True Positive,False
+train,rat_benign,rat,WS-IT-002,T1219,Benign True Positive,False
+train,office_child_fake_splwow,officechild,WS-ENG-151,T1204.002,True Positive,False
+train,vss_benign,vss,SRV-APP06,T1490,False Positive,True
+train,discovery_benign,recon,WS-IT-044,T1087.002,Benign True Positive,False
+train,office_child_splwow,officechild,WS-HR-084,T1204.002,False Positive,False
+train,psexec_mal,remsvc,WS-ENG-085,T1569.002,True Positive,False
+train,vss_mal,vss,SRV-FILE11,T1490,True Positive,False
+train,ransom_mal,massfile,SRV-FILE05,T1486,True Positive,False
+train,office_child_mal,officechild,WS-ENG-020,T1204.002,True Positive,False
+train,schtask_mal,schtask,WS-FIN-061,T1053.005,True Positive,False
+train,discovery_mal,recon,WS-ENG-223,T1087.002,True Positive,True
+train,ps_encoded_sccm,encps,WS-FIN-043,T1059.001,Benign True Positive,False
+train,psexec_benign,remsvc,JMP-ADM06,T1569.002,Benign True Positive,False
+train,defender_benign,defender,WS-SLS-143,T1562.001,Benign True Positive,False
+train,defender_benign,defender,WS-LGL-248,T1562.001,Benign True Positive,False
+train,rclone_wrong_remote,cloudsync,SRV-BKP07,T1567.002,True Positive,False
+train,sql_cmd,svcshell,SRV-SQL01,T1059.003,Needs Investigation,True
+train,ransom_mal,massfile,SRV-FILE07,T1486,True Positive,True
+train,ransom_benign,massfile,SRV-FILE11,T1486,False Positive,False
+train,defender_mal,defender,WS-HR-242,T1562.001,True Positive,False
+train,runkey_mal,runkey,WS-ENG-073,T1547.001,True Positive,False
+train,lsass_werfault,lsass,SRV-APP05,T1003.001,False Positive,True
+train,rclone_benign,cloudsync,SRV-BKP12,T1567.002,Benign True Positive,True
+train,vss_benign,vss,SRV-APP05,T1490,False Positive,False
+train,rclone_mal,cloudsync,SRV-FILE06,T1567.002,True Positive,False
+train,vss_mal,vss,SRV-FILE09,T1490,True Positive,False
+train,sql_cmd,svcshell,SRV-SQL08,T1059.003,Needs Investigation,True
+train,internal_tool_task,schtask,WS-ENG-143,T1053.005,Benign True Positive,False
+train,ps_encoded_ambiguous,encps,WS-HR-132,T1087.002,Needs Investigation,False
+train,certutil_download,certutil,WS-ENG-037,T1105,True Positive,False
+train,lsass_procdump,lsass,WS-ENG-074,T1003.001,True Positive,False
+train,lsass_procdump,lsass,WS-ENG-137,T1003.001,True Positive,False
+train,runkey_mal,runkey,WS-FIN-047,T1547.001,True Positive,True
+train,internal_tool_task,schtask,WS-FIN-222,T1053.005,Benign True Positive,False
+train,schtask_mal,schtask,WS-SLS-132,T1053.005,True Positive,False
+train,office_child_splwow,officechild,WS-FIN-244,T1204.002,False Positive,False
+train,discovery_benign,recon,WS-IT-043,T1087.002,Benign True Positive,True
+train,certutil_hashfile,certutil,WS-IT-057,T1218,False Positive,False
+train,rat_benign,rat,WS-IT-013,T1219,Benign True Positive,True
+train,ransom_benign,massfile,SRV-FILE12,T1486,False Positive,False
+train,office_child_splwow,officechild,WS-MKT-125,T1204.002,False Positive,False
+train,lsass_werfault,lsass,SRV-FILE08,T1003.001,False Positive,False
+train,lsass_procdump,lsass,WS-SLS-068,T1003.001,True Positive,False
+train,office_child_mal,officechild,WS-FIN-061,T1204.002,True Positive,True
+train,defender_benign,defender,WS-MKT-014,T1562.001,Benign True Positive,False
+train,psexec_mal,remsvc,WS-ENG-095,T1569.002,True Positive,False
+train,sql_cmd,svcshell,SRV-SQL01,T1059.003,Needs Investigation,True
+train,ps_encoded_fake_sccm,encps,WS-LGL-014,T1059.001,True Positive,False
+train,psexec_ambiguous,remsvc,WS-LGL-167,T1569.002,Needs Investigation,False
+train,lsass_procdump,lsass,WS-LGL-119,T1003.001,True Positive,True
+train,rat_mal,rat,WS-FIN-199,T1219,True Positive,False
+train,runkey_masq,runkey,WS-ENG-059,T1547.001,True Positive,False
+train,ransom_mal,massfile,SRV-FILE07,T1486,True Positive,False
+train,certutil_hashfile,certutil,WS-IT-010,T1218,False Positive,False
+train,psexec_benign,remsvc,JMP-ADM10,T1569.002,Benign True Positive,False
+train,psexec_mal,remsvc,WS-MKT-113,T1569.002,True Positive,False
+train,ransom_benign,massfile,SRV-FILE07,T1486,False Positive,False
+train,psexec_mal,remsvc,WS-LGL-004,T1569.002,True Positive,False
+train,ps_encoded_sccm,encps,WS-HR-105,T1059.001,Benign True Positive,False
+train,internal_tool_task,schtask,WS-SLS-127,T1053.005,Benign True Positive,False
+train,discovery_benign,recon,WS-IT-041,T1087.002,Benign True Positive,False
+train,rat_mal,rat,WS-FIN-091,T1219,True Positive,False
+train,schtask_benign,schtask,WS-HR-239,T1053.005,Benign True Positive,True
+train,psexec_ambiguous,remsvc,WS-HR-043,T1569.002,Needs Investigation,False
+train,teamviewer_user,rat,WS-SLS-129,T1219,True Positive,True
+train,rat_mal,rat,WS-FIN-216,T1219,True Positive,False
+train,discovery_benign,recon,WS-IT-050,T1087.002,Benign True Positive,False
+train,ps_encoded_office,encps,WS-SLS-103,T1059.001,True Positive,True
+train,psexec_benign,remsvc,JMP-ADM08,T1569.002,Needs Investigation,True
+train,psexec_benign,remsvc,JMP-ADM01,T1569.002,Benign True Positive,True
+train,rat_benign,rat,WS-IT-055,T1219,Benign True Positive,False
+train,ps_encoded_ambiguous,encps,WS-SLS-176,T1087.002,Needs Investigation,False
+train,psexec_ambiguous,remsvc,WS-FIN-034,T1569.002,Needs Investigation,False
+train,office_child_addin,officechild,WS-FIN-146,T1204.002,False Positive,False
+train,ps_encoded_sccm,encps,WS-MKT-230,T1059.001,Benign True Positive,False
+train,office_child_addin,officechild,WS-FIN-136,T1204.002,False Positive,True
+train,lsass_werfault,lsass,SRV-SQL08,T1003.001,False Positive,False
+train,internal_tool_task,schtask,WS-LGL-131,T1053.005,Benign True Positive,False
+train,runkey_mal,runkey,WS-FIN-150,T1547.001,True Positive,False
+train,defender_mal,defender,WS-HR-193,T1562.001,True Positive,False
+train,schtask_benign,schtask,WS-HR-071,T1053.005,Benign True Positive,False
+train,psexec_ambiguous,remsvc,WS-FIN-164,T1569.002,True Positive,True
+train,vss_mal,vss,SRV-FILE12,T1490,True Positive,False
+train,ps_encoded_ambiguous,encps,WS-SLS-089,T1087.002,Needs Investigation,False
+train,schtask_mal,schtask,WS-LGL-091,T1053.005,True Positive,False
+train,schtask_benign,schtask,WS-HR-124,T1053.005,Benign True Positive,False
+train,ransom_benign,massfile,SRV-FILE08,T1486,False Positive,False
+train,discovery_benign,recon,WS-IT-022,T1087.002,Benign True Positive,False
+train,ransom_benign,massfile,SRV-FILE11,T1486,False Positive,False
+train,runkey_benign,runkey,WS-HR-011,T1547.001,Benign True Positive,False
+train,office_child_fake_splwow,officechild,WS-HR-045,T1204.002,True Positive,False
+train,office_child_splwow,officechild,WS-LGL-133,T1204.002,False Positive,False
+train,rundll32_mal,rundll32,WS-ENG-170,T1218.011,True Positive,False
+train,lsass_procdump,lsass,WS-SLS-160,T1003.001,True Positive,False
+train,webshell_mal,webchild,SRV-WEB08,T1505.003,True Positive,False
+train,ransom_mal,massfile,SRV-FILE10,T1486,True Positive,True
+train,lsass_procdump,lsass,WS-LGL-222,T1003.001,True Positive,True
+train,psexec_ambiguous,remsvc,WS-FIN-175,T1569.002,Needs Investigation,False
+train,rundll32_mal,rundll32,WS-HR-197,T1218.011,True Positive,False
+train,psexec_benign,remsvc,JMP-ADM12,T1569.002,Needs Investigation,True
+train,discovery_benign,recon,WS-IT-016,T1087.002,Benign True Positive,False
+train,rundll32_mal,rundll32,WS-HR-065,T1218.011,True Positive,True
+train,ps_encoded_fake_sccm,encps,WS-SLS-179,T1059.001,True Positive,False
+train,psexec_benign,remsvc,JMP-ADM03,T1569.002,Benign True Positive,False
+train,sql_cmd,svcshell,SRV-SQL06,T1059.003,Needs Investigation,False
+train,rundll32_mal,rundll32,WS-FIN-100,T1218.011,True Positive,True
+train,vss_mal,vss,SRV-FILE06,T1490,True Positive,True
+train,office_child_mal,officechild,WS-LGL-246,T1204.002,True Positive,False
+train,schtask_benign,schtask,WS-ENG-219,T1053.005,Benign True Positive,True
+train,ps_encoded_sccm,encps,WS-MKT-095,T1059.001,Benign True Positive,False
+train,psexec_ambiguous,remsvc,WS-ENG-065,T1569.002,Needs Investigation,True
+train,ps_encoded_office,encps,WS-ENG-178,T1059.001,True Positive,False
+train,rundll32_mal,rundll32,WS-FIN-191,T1218.011,True Positive,False
+train,ps_encoded_sccm,encps,WS-ENG-155,T1059.001,Benign True Positive,True
+train,certutil_download,certutil,WS-MKT-052,T1105,True Positive,False
+train,webshell_fp,webchild,SRV-WEB06,T1505.003,False Positive,False
+train,rundll32_mal,rundll32,WS-ENG-217,T1218.011,True Positive,True
+train,webshell_fp,webchild,SRV-APP11,T1505.003,False Positive,False
+train,psexec_ambiguous,remsvc,WS-MKT-180,T1569.002,Needs Investigation,True
+train,webshell_fp,webchild,SRV-WEB10,T1505.003,False Positive,False
+train,psexec_benign,remsvc,JMP-ADM10,T1569.002,Benign True Positive,True
+train,rclone_mal,cloudsync,SRV-FILE01,T1567.002,True Positive,True
+train,rundll32_benign,rundll32,WS-ENG-132,T1218.011,False Positive,False
+train,psexec_benign,remsvc,JMP-ADM09,T1569.002,Benign True Positive,True
+train,rat_mal,rat,WS-FIN-027,T1219,True Positive,False
+train,ps_encoded_office,encps,WS-SLS-048,T1059.001,True Positive,False
+train,office_child_splwow,officechild,WS-HR-217,T1204.002,False Positive,False
+train,rundll32_benign,rundll32,WS-ENG-200,T1218.011,False Positive,True
+train,office_child_mal,officechild,WS-ENG-121,T1204.002,True Positive,False
+train,ps_encoded_sccm,encps,WS-MKT-235,T1059.001,Benign True Positive,True
+train,ps_encoded_office,encps,WS-ENG-018,T1059.001,True Positive,False
+train,vss_benign,vss,SRV-APP03,T1490,False Positive,False
+train,rundll32_benign,rundll32,WS-ENG-185,T1218.011,False Positive,False
+train,runkey_benign,runkey,WS-ENG-090,T1547.001,Benign True Positive,False
+train,ransom_benign,massfile,SRV-FILE11,T1486,False Positive,False
+train,office_child_addin,officechild,WS-FIN-142,T1204.002,False Positive,True
+train,discovery_mal,recon,WS-FIN-228,T1087.002,True Positive,False
+train,rundll32_mal,rundll32,WS-FIN-119,T1218.011,True Positive,False
+train,schtask_mal,schtask,WS-SLS-165,T1053.005,True Positive,True
+train,lsass_fake_werfault,lsass,WS-LGL-089,T1003.001,True Positive,False
+train,office_child_mal,officechild,WS-ENG-153,T1204.002,True Positive,False
+train,discovery_benign,recon,WS-IT-048,T1087.002,Benign True Positive,False
+train,certutil_hashfile,certutil,WS-IT-025,T1218,False Positive,False
+train,schtask_mal,schtask,WS-LGL-185,T1053.005,True Positive,False
+train,lsass_procdump,lsass,WS-HR-089,T1003.001,True Positive,True
+train,lsass_fake_werfault,lsass,WS-SLS-064,T1003.001,True Positive,False
+train,lsass_procdump,lsass,WS-LGL-233,T1003.001,True Positive,False
+train,vss_mal,vss,SRV-FILE09,T1490,True Positive,False
+train,ransom_mal,massfile,SRV-FILE12,T1486,True Positive,False
+train,certutil_download,certutil,WS-ENG-103,T1105,True Positive,True
+train,runkey_benign,runkey,WS-FIN-185,T1547.001,Benign True Positive,False
+train,sql_cmd,svcshell,SRV-SQL01,T1059.003,Needs Investigation,False
+train,internal_tool_task,schtask,WS-MKT-072,T1053.005,Benign True Positive,False
+train,lsass_fake_werfault,lsass,WS-SLS-230,T1003.001,True Positive,False
+train,ps_encoded_sccm,encps,WS-SLS-085,T1059.001,Benign True Positive,False
+train,office_child_splwow,officechild,WS-MKT-195,T1204.002,False Positive,True
+train,certutil_download,certutil,WS-LGL-107,T1105,True Positive,False
+train,ps_encoded_ambiguous,encps,WS-MKT-188,T1087.002,Needs Investigation,False
+train,ps_encoded_ambiguous,encps,WS-ENG-153,T1087.002,Needs Investigation,False
+train,webshell_fp,webchild,SRV-APP06,T1505.003,False Positive,False
+train,ps_encoded_ambiguous,encps,WS-HR-030,T1087.002,Needs Investigation,False
+train,psexec_ambiguous,remsvc,WS-HR-095,T1569.002,Needs Investigation,True
+train,rclone_mal,cloudsync,SRV-FILE07,T1567.002,True Positive,False
+train,office_child_fake_splwow,officechild,WS-LGL-028,T1204.002,True Positive,False
+train,ransom_benign,massfile,SRV-FILE09,T1486,False Positive,False
+train,ransom_benign,massfile,SRV-FILE02,T1486,False Positive,False
+train,lsass_procdump,lsass,WS-SLS-178,T1003.001,True Positive,False
+train,psexec_mal,remsvc,WS-ENG-069,T1569.002,True Positive,True
+train,certutil_download,certutil,WS-FIN-103,T1105,True Positive,False
+train,office_child_addin,officechild,WS-FIN-144,T1204.002,False Positive,False
+train,runkey_mal,runkey,WS-MKT-026,T1547.001,True Positive,False
+train,webshell_mal,webchild,SRV-WEB01,T1505.003,True Positive,False
+train,vss_benign,vss,SRV-FILE12,T1490,False Positive,False
+train,ps_encoded_fake_sccm,encps,WS-LGL-013,T1059.001,True Positive,True
+train,ps_encoded_office,encps,WS-MKT-049,T1059.001,True Positive,True
+train,lsass_werfault,lsass,SRV-APP12,T1003.001,False Positive,False
+train,discovery_mal,recon,WS-FIN-240,T1087.002,True Positive,False
+train,office_child_fake_splwow,officechild,WS-MKT-167,T1204.002,True Positive,False
+train,vss_mal,vss,SRV-FILE07,T1490,True Positive,False
+train,rclone_benign,cloudsync,SRV-BKP03,T1567.002,Benign True Positive,True
+train,defender_mal,defender,WS-FIN-101,T1562.001,True Positive,False
+train,ps_encoded_ambiguous,encps,WS-MKT-145,T1087.002,Needs Investigation,False
+train,ps_encoded_office,encps,WS-HR-144,T1059.001,True Positive,False
+train,ransom_benign,massfile,SRV-FILE12,T1486,False Positive,False
+train,webshell_mal,webchild,SRV-WEB03,T1505.003,True Positive,False
+train,runkey_benign,runkey,WS-ENG-135,T1547.001,Benign True Positive,False
+train,office_child_addin,officechild,WS-FIN-209,T1204.002,False Positive,False
+train,defender_benign,defender,WS-MKT-003,T1562.001,Benign True Positive,False
+train,defender_benign,defender,WS-LGL-201,T1562.001,Benign True Positive,False
+train,certutil_download,certutil,WS-MKT-204,T1105,True Positive,False
+train,discovery_benign,recon,WS-IT-054,T1087.002,Benign True Positive,False
+train,runkey_benign,runkey,WS-HR-165,T1547.001,Benign True Positive,True
+train,rclone_mal,cloudsync,SRV-FILE09,T1567.002,True Positive,False
+train,webshell_mal,webchild,SRV-WEB10,T1505.003,True Positive,True
+train,defender_mal,defender,WS-HR-192,T1562.001,True Positive,False
+train,defender_benign,defender,WS-FIN-013,T1562.001,Benign True Positive,True
+train,lsass_werfault,lsass,SRV-FILE07,T1003.001,False Positive,False
+train,vss_mal,vss,SRV-FILE10,T1490,True Positive,False
+train,internal_tool_task,schtask,WS-ENG-158,T1053.005,Benign True Positive,False
+train,rclone_benign,cloudsync,SRV-BKP08,T1567.002,Benign True Positive,False
+train,ransom_mal,massfile,SRV-FILE07,T1486,True Positive,True
+train,runkey_benign,runkey,WS-LGL-147,T1547.001,Benign True Positive,False
+train,rat_mal,rat,WS-FIN-031,T1219,True Positive,False
+train,certutil_download,certutil,WS-HR-064,T1105,True Positive,False
+train,certutil_hashfile,certutil,WS-IT-022,T1218,False Positive,True
+train,lsass_fake_werfault,lsass,WS-MKT-187,T1003.001,True Positive,False
+train,rundll32_benign,rundll32,WS-SLS-087,T1218.011,False Positive,False
+train,certutil_hashfile,certutil,WS-IT-046,T1218,False Positive,False
+train,office_child_mal,officechild,WS-FIN-176,T1204.002,True Positive,False
+train,runkey_mal,runkey,WS-SLS-032,T1547.001,True Positive,False
+train,lsass_procdump,lsass,WS-HR-030,T1003.001,True Positive,False
+train,vss_benign,vss,SRV-SQL03,T1490,False Positive,True
+train,rundll32_benign,rundll32,WS-LGL-061,T1218.011,False Positive,False
+train,office_child_splwow,officechild,WS-SLS-095,T1204.002,False Positive,False
+train,rclone_wrong_remote,cloudsync,SRV-BKP10,T1567.002,True Positive,False
+train,rat_benign,rat,WS-IT-030,T1219,Benign True Positive,False
+train,lsass_werfault,lsass,SRV-FILE11,T1003.001,False Positive,False
+train,runkey_benign,runkey,WS-SLS-212,T1547.001,Benign True Positive,True
+train,ps_encoded_fake_sccm,encps,WS-SLS-201,T1059.001,True Positive,False
+train,discovery_benign,recon,WS-IT-014,T1087.002,Benign True Positive,False
+train,schtask_benign,schtask,WS-LGL-156,T1053.005,Benign True Positive,False
+train,webshell_fp,webchild,SRV-APP09,T1505.003,False Positive,False
+train,rat_mal,rat,WS-FIN-075,T1219,True Positive,False
+train,ps_encoded_office,encps,WS-LGL-233,T1059.001,True Positive,False
+train,rclone_wrong_remote,cloudsync,SRV-BKP04,T1567.002,True Positive,False
+train,rundll32_mal,rundll32,WS-ENG-148,T1218.011,True Positive,False
+train,lsass_fake_werfault,lsass,WS-ENG-198,T1003.001,True Positive,True
+train,rat_benign,rat,WS-IT-058,T1219,Benign True Positive,False
+train,office_child_fake_splwow,officechild,WS-LGL-012,T1204.002,True Positive,False
+train,ransom_benign,massfile,SRV-FILE05,T1486,False Positive,False
+train,office_child_splwow,officechild,WS-ENG-219,T1204.002,False Positive,True
+train,rat_mal,rat,WS-FIN-201,T1219,True Positive,False
+train,rundll32_benign,rundll32,WS-MKT-057,T1218.011,False Positive,False
+train,office_child_fake_splwow,officechild,WS-LGL-151,T1204.002,True Positive,False
+train,ps_encoded_sccm,encps,WS-FIN-203,T1059.001,Benign True Positive,False
+train,ransom_benign,massfile,SRV-FILE03,T1486,False Positive,False
+train,vss_mal,vss,SRV-FILE07,T1490,True Positive,True
+train,psexec_benign,remsvc,JMP-ADM04,T1569.002,Benign True Positive,False
+train,ps_encoded_fake_sccm,encps,WS-ENG-098,T1059.001,True Positive,False
+train,ransom_benign,massfile,SRV-FILE11,T1486,False Positive,True
+train,discovery_benign,recon,WS-IT-024,T1087.002,Benign True Positive,False
+train,webshell_mal,webchild,SRV-WEB07,T1505.003,True Positive,False
+train,office_child_splwow,officechild,WS-MKT-049,T1204.002,False Positive,True
+train,sql_cmd,svcshell,SRV-SQL02,T1059.003,Needs Investigation,False
+train,psexec_mal,remsvc,WS-MKT-036,T1569.002,True Positive,False
+train,ransom_mal,massfile,SRV-FILE08,T1486,True Positive,False
+train,rclone_benign,cloudsync,SRV-BKP06,T1567.002,Benign True Positive,True
+train,psexec_benign,remsvc,JMP-ADM11,T1569.002,Benign True Positive,False
+train,rat_benign,rat,WS-IT-033,T1219,Benign True Positive,True
+train,lsass_procdump,lsass,WS-MKT-183,T1003.001,True Positive,True
+train,ps_encoded_office,encps,WS-ENG-151,T1059.001,True Positive,True
+train,teamviewer_user,rat,WS-SLS-175,T1219,True Positive,True
+train,defender_mal,defender,WS-ENG-044,T1562.001,True Positive,False
+train,rat_benign,rat,WS-IT-043,T1219,Benign True Positive,True
+train,discovery_benign,recon,WS-IT-038,T1087.002,Benign True Positive,False
+train,office_child_addin,officechild,WS-FIN-161,T1204.002,False Positive,False
+train,lsass_werfault,lsass,SRV-FILE04,T1003.001,False Positive,False
+train,lsass_fake_werfault,lsass,WS-ENG-091,T1003.001,True Positive,True
+train,office_child_fake_splwow,officechild,WS-FIN-162,T1204.002,True Positive,False
+train,runkey_masq,runkey,WS-ENG-141,T1547.001,True Positive,False
+train,vss_benign,vss,SRV-FILE05,T1490,False Positive,True
+train,ps_encoded_fake_sccm,encps,WS-SLS-110,T1059.001,True Positive,True
+train,office_child_addin,officechild,WS-FIN-067,T1204.002,False Positive,False
+train,psexec_benign,remsvc,JMP-ADM02,T1569.002,Benign True Positive,False
+train,rundll32_benign,rundll32,WS-ENG-027,T1218.011,False Positive,False
+train,rclone_wrong_remote,cloudsync,SRV-BKP01,T1567.002,True Positive,False
+train,schtask_benign,schtask,WS-SLS-019,T1053.005,Benign True Positive,True
+train,vss_mal,vss,SRV-FILE04,T1490,True Positive,False
+train,ransom_mal,massfile,SRV-FILE12,T1486,True Positive,False
+train,office_child_addin,officechild,WS-FIN-099,T1204.002,False Positive,False
+train,certutil_download,certutil,WS-SLS-036,T1105,True Positive,True
+train,lsass_werfault,lsass,SRV-APP08,T1003.001,False Positive,False
+train,rundll32_mal,rundll32,WS-HR-075,T1218.011,True Positive,False
+train,ps_encoded_ambiguous,encps,WS-FIN-197,T1087.002,Needs Investigation,False
+train,runkey_mal,runkey,WS-ENG-210,T1547.001,True Positive,False
+train,vss_benign,vss,SRV-APP10,T1490,False Positive,False
+train,sql_cmd,svcshell,SRV-SQL12,T1059.003,Needs Investigation,True
+train,psexec_mal,remsvc,WS-MKT-038,T1569.002,True Positive,False
+train,office_child_fake_splwow,officechild,WS-ENG-038,T1204.002,True Positive,False
+train,rundll32_mal,rundll32,WS-SLS-173,T1218.011,True Positive,False
+train,rundll32_mal,rundll32,WS-MKT-239,T1218.011,True Positive,True
+train,vss_mal,vss,SRV-FILE01,T1490,True Positive,False
+train,ps_encoded_ambiguous,encps,WS-SLS-016,T1087.002,Needs Investigation,False
+train,runkey_benign,runkey,WS-FIN-225,T1547.001,Benign True Positive,False
+train,ransom_mal,massfile,SRV-FILE08,T1486,True Positive,False
+train,vss_benign,vss,SRV-FILE05,T1490,False Positive,False
+train,office_child_splwow,officechild,WS-HR-130,T1204.002,False Positive,False
+train,rclone_benign,cloudsync,SRV-BKP02,T1567.002,Benign True Positive,True
+train,office_child_mal,officechild,WS-HR-023,T1204.002,True Positive,True
+train,webshell_fp,webchild,SRV-WEB08,T1505.003,False Positive,False
+train,lsass_fake_werfault,lsass,WS-LGL-025,T1003.001,True Positive,False
+train,ps_encoded_ambiguous,encps,WS-SLS-157,T1087.002,True Positive,True
+train,office_child_fake_splwow,officechild,WS-MKT-066,T1204.002,True Positive,False
+train,rclone_benign,cloudsync,SRV-BKP12,T1567.002,Benign True Positive,False
+train,vss_benign,vss,SRV-SQL08,T1490,False Positive,False
+train,certutil_download,certutil,WS-HR-215,T1105,True Positive,False
+train,psexec_mal,remsvc,WS-FIN-236,T1569.002,True Positive,False
+train,discovery_mal,recon,WS-ENG-106,T1087.002,True Positive,True
+train,runkey_masq,runkey,WS-ENG-221,T1547.001,True Positive,False
+train,office_child_fake_splwow,officechild,WS-SLS-082,T1204.002,True Positive,False
+train,rclone_mal,cloudsync,SRV-FILE10,T1567.002,True Positive,True
+train,discovery_mal,recon,WS-LGL-026,T1087.002,True Positive,False
+train,ransom_mal,massfile,SRV-FILE12,T1486,True Positive,False
+train,runkey_benign,runkey,WS-FIN-080,T1547.001,Benign True Positive,False
+train,defender_benign,defender,WS-LGL-140,T1562.001,Benign True Positive,True
+train,discovery_benign,recon,WS-IT-041,T1087.002,Benign True Positive,False
+train,rundll32_benign,rundll32,WS-LGL-154,T1218.011,False Positive,False
+train,webshell_fp,webchild,SRV-WEB11,T1505.003,False Positive,False
+train,sql_cmd,svcshell,SRV-SQL07,T1059.003,Needs Investigation,False
+train,schtask_benign,schtask,WS-LGL-171,T1053.005,Benign True Positive,False
+train,office_child_splwow,officechild,WS-ENG-089,T1204.002,False Positive,False
+train,runkey_benign,runkey,WS-SLS-055,T1547.001,Benign True Positive,False
+train,office_child_mal,officechild,WS-SLS-079,T1204.002,True Positive,False
+train,vss_mal,vss,SRV-FILE06,T1490,True Positive,False
+train,office_child_mal,officechild,WS-FIN-063,T1204.002,True Positive,False
+train,lsass_procdump,lsass,WS-SLS-027,T1003.001,True Positive,False
+train,rat_benign,rat,WS-IT-028,T1219,Benign True Positive,False
+train,rat_benign,rat,WS-IT-051,T1219,Benign True Positive,False
+train,ps_encoded_office,encps,WS-SLS-145,T1059.001,True Positive,False
+train,webshell_fp,webchild,SRV-WEB11,T1505.003,False Positive,False
+train,rclone_wrong_remote,cloudsync,SRV-BKP08,T1567.002,True Positive,False
+train,certutil_hashfile,certutil,WS-IT-058,T1218,False Positive,True
+train,rclone_wrong_remote,cloudsync,SRV-BKP04,T1567.002,True Positive,False
+train,schtask_benign,schtask,WS-MKT-202,T1053.005,Benign True Positive,True
+train,office_child_splwow,officechild,WS-ENG-244,T1204.002,False Positive,False
+train,ps_encoded_sccm,encps,WS-FIN-134,T1059.001,Benign True Positive,True
+train,certutil_hashfile,certutil,WS-IT-012,T1218,False Positive,False
+train,rat_benign,rat,WS-IT-052,T1219,Benign True Positive,False
+train,office_child_splwow,officechild,WS-HR-086,T1204.002,False Positive,False
+train,defender_mal,defender,WS-ENG-241,T1562.001,True Positive,True
+train,webshell_fp,webchild,SRV-APP09,T1505.003,False Positive,True
+train,discovery_benign,recon,WS-IT-060,T1087.002,Benign True Positive,False
+train,teamviewer_user,rat,WS-ENG-162,T1219,Needs Investigation,False
+train,runkey_benign,runkey,WS-ENG-001,T1547.001,Benign True Positive,True
+train,defender_mal,defender,WS-HR-005,T1562.001,True Positive,False
+train,lsass_werfault,lsass,SRV-FILE01,T1003.001,False Positive,True
+train,discovery_mal,recon,WS-SLS-171,T1087.002,True Positive,True
+train,office_child_mal,officechild,WS-ENG-081,T1204.002,True Positive,False
+train,office_child_mal,officechild,WS-HR-175,T1204.002,True Positive,False
+train,office_child_fake_splwow,officechild,WS-HR-073,T1204.002,True Positive,False
+train,rclone_benign,cloudsync,SRV-BKP06,T1567.002,Benign True Positive,False
+train,ps_encoded_office,encps,WS-SLS-213,T1059.001,True Positive,False
+train,lsass_fake_werfault,lsass,WS-FIN-220,T1003.001,True Positive,False
+train,teamviewer_user,rat,WS-SLS-026,T1219,Needs Investigation,False
+train,runkey_mal,runkey,WS-ENG-040,T1547.001,True Positive,False
+train,rundll32_benign,rundll32,WS-FIN-034,T1218.011,False Positive,True
+train,psexec_mal,remsvc,WS-HR-042,T1569.002,True Positive,False
+train,certutil_hashfile,certutil,WS-IT-016,T1218,False Positive,False
+train,rclone_wrong_remote,cloudsync,SRV-BKP02,T1567.002,True Positive,True
+train,discovery_mal,recon,WS-LGL-146,T1087.002,True Positive,False
+train,discovery_mal,recon,WS-HR-102,T1087.002,True Positive,False
+train,ps_encoded_fake_sccm,encps,WS-MKT-181,T1059.001,True Positive,True
+train,certutil_download,certutil,WS-SLS-207,T1105,True Positive,False
+train,psexec_benign,remsvc,JMP-ADM07,T1569.002,Benign True Positive,False
+train,psexec_ambiguous,remsvc,WS-HR-106,T1569.002,Needs Investigation,False
+train,certutil_download,certutil,WS-FIN-010,T1105,True Positive,False
+train,ps_encoded_ambiguous,encps,WS-FIN-156,T1087.002,Needs Investigation,True
+train,defender_mal,defender,WS-ENG-218,T1562.001,True Positive,True
+train,runkey_benign,runkey,WS-FIN-202,T1547.001,Benign True Positive,False
+train,lsass_fake_werfault,lsass,WS-LGL-235,T1003.001,True Positive,False
+train,lsass_werfault,lsass,SRV-FILE05,T1003.001,False Positive,False
+train,webshell_mal,webchild,SRV-WEB09,T1505.003,True Positive,True
+train,ps_encoded_office,encps,WS-ENG-048,T1059.001,True Positive,True
+train,discovery_benign,recon,WS-IT-012,T1087.002,Benign True Positive,False
+train,webshell_mal,webchild,SRV-WEB10,T1505.003,True Positive,True
+train,office_child_mal,officechild,WS-MKT-109,T1204.002,True Positive,True
+train,psexec_mal,remsvc,WS-HR-217,T1569.002,True Positive,False
+train,vss_benign,vss,SRV-FILE03,T1490,False Positive,False
+train,ransom_mal,massfile,SRV-FILE05,T1486,True Positive,False
+train,ps_encoded_ambiguous,encps,WS-MKT-081,T1087.002,Benign True Positive,True
+train,certutil_download,certutil,WS-MKT-113,T1105,True Positive,False
+train,vss_mal,vss,SRV-FILE06,T1490,True Positive,False
+train,office_child_splwow,officechild,WS-LGL-078,T1204.002,False Positive,False
+train,runkey_benign,runkey,WS-MKT-024,T1547.001,Benign True Positive,False
+train,rat_mal,rat,WS-FIN-096,T1219,True Positive,False
+train,lsass_procdump,lsass,WS-HR-201,T1003.001,True Positive,False
+train,vss_mal,vss,SRV-FILE05,T1490,True Positive,True
+train,defender_benign,defender,WS-LGL-052,T1562.001,Benign True Positive,False
+train,defender_mal,defender,WS-MKT-009,T1562.001,True Positive,False
+train,rundll32_mal,rundll32,WS-HR-140,T1218.011,True Positive,True
+train,rclone_benign,cloudsync,SRV-BKP09,T1567.002,Benign True Positive,False
+train,certutil_download,certutil,WS-HR-236,T1105,True Positive,True
+train,schtask_benign,schtask,WS-SLS-128,T1053.005,Benign True Positive,False
+train,ps_encoded_sccm,encps,WS-SLS-117,T1059.001,Benign True Positive,False
+train,ransom_mal,massfile,SRV-FILE06,T1486,True Positive,False
+train,ransom_benign,massfile,SRV-FILE10,T1486,False Positive,False
+train,discovery_benign,recon,WS-IT-027,T1087.002,Benign True Positive,False
+train,lsass_fake_werfault,lsass,WS-HR-171,T1003.001,True Positive,True
+train,rat_mal,rat,WS-FIN-192,T1219,True Positive,False
+train,ransom_mal,massfile,SRV-FILE07,T1486,True Positive,False
+train,vss_mal,vss,SRV-FILE03,T1490,True Positive,False
+train,rundll32_mal,rundll32,WS-SLS-165,T1218.011,True Positive,False
+train,rat_mal,rat,WS-FIN-062,T1219,True Positive,False
+train,rundll32_mal,rundll32,WS-MKT-069,T1218.011,True Positive,False
+train,rat_mal,rat,WS-FIN-107,T1219,True Positive,True
+train,defender_mal,defender,WS-MKT-243,T1562.001,True Positive,False
+train,certutil_hashfile,certutil,WS-IT-009,T1218,False Positive,False
+train,teamviewer_user,rat,WS-LGL-137,T1219,Needs Investigation,False
+train,runkey_benign,runkey,WS-ENG-075,T1547.001,Benign True Positive,True
+train,defender_benign,defender,WS-HR-129,T1562.001,Benign True Positive,True
+train,teamviewer_user,rat,WS-LGL-045,T1219,Needs Investigation,False
+train,psexec_ambiguous,remsvc,WS-HR-060,T1569.002,Needs Investigation,False
+train,certutil_hashfile,certutil,WS-IT-027,T1218,False Positive,False
+train,rclone_mal,cloudsync,SRV-FILE10,T1567.002,True Positive,True
+train,webshell_fp,webchild,SRV-APP06,T1505.003,False Positive,False
+train,discovery_mal,recon,WS-HR-213,T1087.002,True Positive,False
+train,rclone_mal,cloudsync,SRV-FILE10,T1567.002,True Positive,False
+train,rat_benign,rat,WS-IT-040,T1219,Benign True Positive,False
+train,ps_encoded_fake_sccm,encps,WS-FIN-237,T1059.001,True Positive,False
+train,ps_encoded_fake_sccm,encps,WS-SLS-183,T1059.001,True Positive,False
+train,rclone_mal,cloudsync,SRV-FILE10,T1567.002,True Positive,True
+train,ransom_benign,massfile,SRV-FILE02,T1486,False Positive,False
+train,schtask_mal,schtask,WS-MKT-121,T1053.005,True Positive,True
+train,vss_benign,vss,SRV-SQL11,T1490,False Positive,True
+train,runkey_mal,runkey,WS-MKT-244,T1547.001,True Positive,False
+train,psexec_mal,remsvc,WS-HR-167,T1569.002,True Positive,True
+train,schtask_benign,schtask,WS-MKT-073,T1053.005,Benign True Positive,False
+train,teamviewer_user,rat,WS-SLS-027,T1219,Needs Investigation,False
+train,webshell_fp,webchild,SRV-APP06,T1505.003,False Positive,False
+train,sql_cmd,svcshell,SRV-SQL07,T1059.003,Needs Investigation,False
+train,psexec_ambiguous,remsvc,WS-ENG-026,T1569.002,Needs Investigation,False
+train,certutil_download,certutil,WS-HR-157,T1105,True Positive,False
+train,runkey_masq,runkey,WS-HR-094,T1547.001,True Positive,False
+train,lsass_fake_werfault,lsass,WS-FIN-201,T1003.001,True Positive,False
+train,webshell_mal,webchild,SRV-WEB04,T1505.003,True Positive,False
+train,ransom_mal,massfile,SRV-FILE07,T1486,True Positive,False
+train,runkey_masq,runkey,WS-SLS-232,T1547.001,True Positive,False
+train,lsass_werfault,lsass,SRV-APP09,T1003.001,False Positive,False
+train,office_child_fake_splwow,officechild,WS-HR-119,T1204.002,True Positive,False
+train,certutil_download,certutil,WS-MKT-003,T1105,True Positive,False
+train,lsass_fake_werfault,lsass,WS-MKT-243,T1003.001,True Positive,False
+train,lsass_procdump,lsass,WS-FIN-131,T1003.001,True Positive,True
+train,psexec_mal,remsvc,WS-FIN-104,T1569.002,True Positive,False
+train,rundll32_mal,rundll32,WS-FIN-025,T1218.011,True Positive,False
+train,certutil_hashfile,certutil,WS-IT-030,T1218,False Positive,False
+train,vss_benign,vss,SRV-FILE06,T1490,False Positive,False
+train,rat_benign,rat,WS-IT-041,T1219,Benign True Positive,False
+train,lsass_procdump,lsass,WS-ENG-016,T1003.001,True Positive,False
+train,lsass_fake_werfault,lsass,WS-ENG-207,T1003.001,True Positive,False
+train,discovery_mal,recon,WS-ENG-024,T1087.002,True Positive,True
+train,rundll32_mal,rundll32,WS-ENG-228,T1218.011,True Positive,False
+train,rclone_mal,cloudsync,SRV-FILE12,T1567.002,True Positive,True
+train,office_child_fake_splwow,officechild,WS-SLS-111,T1204.002,True Positive,False
+train,office_child_addin,officechild,WS-FIN-216,T1204.002,False Positive,False
+train,certutil_download,certutil,WS-SLS-250,T1105,True Positive,False
+train,lsass_fake_werfault,lsass,WS-LGL-193,T1003.001,True Positive,False
+train,internal_tool_task,schtask,WS-MKT-009,T1053.005,Benign True Positive,False
+train,lsass_werfault,lsass,SRV-FILE05,T1003.001,False Positive,False
+train,vss_benign,vss,SRV-FILE04,T1490,False Positive,False
+train,defender_benign,defender,WS-ENG-071,T1562.001,Benign True Positive,False
+train,rundll32_benign,rundll32,WS-MKT-240,T1218.011,False Positive,False
+train,webshell_mal,webchild,SRV-WEB04,T1505.003,True Positive,False
+train,rclone_mal,cloudsync,SRV-FILE12,T1567.002,True Positive,True
+train,ps_encoded_fake_sccm,encps,WS-LGL-168,T1059.001,True Positive,False
+train,lsass_procdump,lsass,WS-FIN-130,T1003.001,True Positive,False
+train,lsass_werfault,lsass,SRV-APP09,T1003.001,False Positive,False
+train,defender_benign,defender,WS-ENG-209,T1562.001,Benign True Positive,False
+train,lsass_fake_werfault,lsass,WS-ENG-027,T1003.001,True Positive,False
+train,rat_benign,rat,WS-IT-034,T1219,Benign True Positive,True
+train,teamviewer_user,rat,WS-SLS-172,T1219,Needs Investigation,False
+train,office_child_mal,officechild,WS-ENG-158,T1204.002,True Positive,True
+train,psexec_benign,remsvc,JMP-ADM04,T1569.002,Benign True Positive,False
+train,lsass_werfault,lsass,SRV-FILE04,T1003.001,False Positive,False
+train,schtask_benign,schtask,WS-FIN-128,T1053.005,Benign True Positive,False
+train,defender_benign,defender,WS-HR-076,T1562.001,Benign True Positive,False
+train,ransom_benign,massfile,SRV-FILE11,T1486,False Positive,True
+train,psexec_mal,remsvc,WS-SLS-032,T1569.002,True Positive,False
+train,defender_benign,defender,WS-FIN-075,T1562.001,Benign True Positive,False
+train,rclone_wrong_remote,cloudsync,SRV-BKP04,T1567.002,True Positive,False
+train,vss_benign,vss,SRV-SQL10,T1490,False Positive,False
+train,webshell_fp,webchild,SRV-APP12,T1505.003,False Positive,False
+train,ps_encoded_fake_sccm,encps,WS-HR-104,T1059.001,True Positive,True
+train,schtask_benign,schtask,WS-SLS-198,T1053.005,Benign True Positive,False
+train,rundll32_benign,rundll32,WS-MKT-148,T1218.011,False Positive,False
+train,certutil_hashfile,certutil,WS-IT-010,T1218,False Positive,False
+train,rundll32_mal,rundll32,WS-LGL-059,T1218.011,True Positive,False
+train,ps_encoded_fake_sccm,encps,WS-ENG-240,T1059.001,True Positive,False
+train,internal_tool_task,schtask,WS-MKT-025,T1053.005,Benign True Positive,False
+train,runkey_masq,runkey,WS-HR-133,T1547.001,True Positive,True
+train,schtask_benign,schtask,WS-HR-080,T1053.005,Benign True Positive,False
+train,ps_encoded_ambiguous,encps,WS-FIN-167,T1087.002,Needs Investigation,False
+train,certutil_hashfile,certutil,WS-IT-015,T1218,False Positive,False
+train,schtask_benign,schtask,WS-HR-023,T1053.005,Benign True Positive,True
+train,defender_mal,defender,WS-LGL-240,T1562.001,True Positive,False
+train,vss_benign,vss,SRV-FILE12,T1490,False Positive,True
+train,runkey_mal,runkey,WS-ENG-030,T1547.001,True Positive,False
+train,discovery_mal,recon,WS-SLS-120,T1087.002,True Positive,False
+train,office_child_fake_splwow,officechild,WS-HR-117,T1204.002,True Positive,False
+train,certutil_hashfile,certutil,WS-IT-025,T1218,False Positive,False
+train,ransom_mal,massfile,SRV-FILE03,T1486,True Positive,False
+train,office_child_fake_splwow,officechild,WS-FIN-060,T1204.002,True Positive,False
+train,runkey_masq,runkey,WS-HR-029,T1547.001,True Positive,False
+train,ps_encoded_office,encps,WS-MKT-213,T1059.001,True Positive,False
+train,defender_benign,defender,WS-FIN-141,T1562.001,Benign True Positive,False
+train,rclone_mal,cloudsync,SRV-FILE04,T1567.002,True Positive,False
+train,psexec_ambiguous,remsvc,WS-ENG-126,T1569.002,Needs Investigation,False
+train,ps_encoded_ambiguous,encps,WS-LGL-117,T1087.002,Needs Investigation,False
+train,rundll32_benign,rundll32,WS-SLS-178,T1218.011,False Positive,False
+train,ps_encoded_sccm,encps,WS-SLS-125,T1059.001,Benign True Positive,False
+train,runkey_benign,runkey,WS-FIN-022,T1547.001,Benign True Positive,True
+train,office_child_mal,officechild,WS-MKT-040,T1204.002,True Positive,False
+train,ps_encoded_ambiguous,encps,WS-MKT-159,T1087.002,Needs Investigation,False
+train,office_child_splwow,officechild,WS-MKT-103,T1204.002,False Positive,False
+train,rclone_benign,cloudsync,SRV-BKP06,T1567.002,Benign True Positive,False
+train,defender_mal,defender,WS-FIN-126,T1562.001,True Positive,True
+train,psexec_ambiguous,remsvc,WS-ENG-221,T1569.002,True Positive,True
+train,ps_encoded_office,encps,WS-LGL-131,T1059.001,True Positive,False
+train,runkey_mal,runkey,WS-SLS-156,T1547.001,True Positive,False
+train,sql_cmd,svcshell,SRV-SQL02,T1059.003,Needs Investigation,False
+train,rclone_benign,cloudsync,SRV-BKP09,T1567.002,Benign True Positive,False
+train,office_child_mal,officechild,WS-LGL-213,T1204.002,True Positive,False
+train,runkey_mal,runkey,WS-LGL-013,T1547.001,True Positive,False
+train,teamviewer_user,rat,WS-SLS-243,T1219,Needs Investigation,False
+train,runkey_masq,runkey,WS-HR-122,T1547.001,True Positive,False
+train,lsass_fake_werfault,lsass,WS-ENG-024,T1003.001,True Positive,False
+train,ransom_mal,massfile,SRV-FILE11,T1486,True Positive,False
+train,discovery_mal,recon,WS-ENG-062,T1087.002,True Positive,False
+train,rat_mal,rat,WS-FIN-052,T1219,True Positive,False
+train,rundll32_benign,rundll32,WS-LGL-016,T1218.011,False Positive,False
+train,ps_encoded_ambiguous,encps,WS-SLS-039,T1087.002,Needs Investigation,False
+train,rclone_mal,cloudsync,SRV-FILE01,T1567.002,True Positive,False
+train,ps_encoded_sccm,encps,WS-LGL-069,T1059.001,Benign True Positive,True
+train,rat_benign,rat,WS-IT-013,T1219,Benign True Positive,False
+train,vss_mal,vss,SRV-FILE09,T1490,True Positive,False
+train,runkey_masq,runkey,WS-FIN-169,T1547.001,True Positive,False
+train,ps_encoded_ambiguous,encps,WS-ENG-006,T1087.002,Needs Investigation,False
+train,vss_mal,vss,SRV-FILE04,T1490,True Positive,False
+train,office_child_splwow,officechild,WS-MKT-155,T1204.002,False Positive,False
+train,rclone_benign,cloudsync,SRV-BKP10,T1567.002,Benign True Positive,False
+train,lsass_werfault,lsass,SRV-APP11,T1003.001,False Positive,False
+train,office_child_mal,officechild,WS-ENG-012,T1204.002,True Positive,False
+train,runkey_benign,runkey,WS-MKT-040,T1547.001,Benign True Positive,False
+train,lsass_fake_werfault,lsass,WS-MKT-161,T1003.001,True Positive,True
+train,ps_encoded_ambiguous,encps,WS-HR-080,T1087.002,Needs Investigation,False
+train,schtask_mal,schtask,WS-SLS-080,T1053.005,True Positive,False
+train,schtask_mal,schtask,WS-LGL-247,T1053.005,True Positive,False
+train,ransom_mal,massfile,SRV-FILE03,T1486,True Positive,False
+train,certutil_download,certutil,WS-ENG-210,T1105,True Positive,False
+train,rclone_mal,cloudsync,SRV-FILE03,T1567.002,True Positive,False
+train,rat_mal,rat,WS-FIN-030,T1219,True Positive,False
+train,ransom_mal,massfile,SRV-FILE06,T1486,True Positive,False
+train,defender_mal,defender,WS-LGL-020,T1562.001,True Positive,True
+train,ps_encoded_fake_sccm,encps,WS-MKT-149,T1059.001,True Positive,False
+train,office_child_splwow,officechild,WS-LGL-242,T1204.002,False Positive,False
+train,psexec_ambiguous,remsvc,WS-ENG-122,T1569.002,Needs Investigation,False
+train,rat_mal,rat,WS-FIN-095,T1219,True Positive,True
+train,runkey_masq,runkey,WS-LGL-034,T1547.001,True Positive,False
+train,ps_encoded_fake_sccm,encps,WS-LGL-189,T1059.001,True Positive,True
+train,rat_benign,rat,WS-IT-014,T1219,Benign True Positive,False
+train,teamviewer_user,rat,WS-HR-195,T1219,Needs Investigation,False
+train,discovery_benign,recon,WS-IT-007,T1087.002,Benign True Positive,False
+train,schtask_mal,schtask,WS-ENG-053,T1053.005,True Positive,False
+train,ransom_mal,massfile,SRV-FILE09,T1486,True Positive,False
+train,office_child_addin,officechild,WS-FIN-192,T1204.002,False Positive,True
+train,certutil_download,certutil,WS-LGL-018,T1105,True Positive,False
+train,ps_encoded_fake_sccm,encps,WS-SLS-108,T1059.001,True Positive,True
+train,rundll32_benign,rundll32,WS-SLS-033,T1218.011,False Positive,False
+train,rundll32_benign,rundll32,WS-LGL-045,T1218.011,False Positive,False
+train,lsass_procdump,lsass,WS-ENG-243,T1003.001,True Positive,True
+train,webshell_fp,webchild,SRV-WEB04,T1505.003,False Positive,False
+train,webshell_mal,webchild,SRV-WEB08,T1505.003,True Positive,True
+train,office_child_mal,officechild,WS-LGL-114,T1204.002,True Positive,False
+train,lsass_fake_werfault,lsass,WS-LGL-119,T1003.001,True Positive,True
+train,webshell_fp,webchild,SRV-APP11,T1505.003,False Positive,False
+train,defender_mal,defender,WS-FIN-114,T1562.001,True Positive,True
+train,lsass_fake_werfault,lsass,WS-HR-087,T1003.001,True Positive,True
+train,rat_benign,rat,WS-IT-051,T1219,Benign True Positive,False
+train,rclone_benign,cloudsync,SRV-BKP11,T1567.002,Benign True Positive,False
+train,ransom_benign,massfile,SRV-FILE12,T1486,False Positive,False
+train,discovery_benign,recon,WS-IT-052,T1087.002,Benign True Positive,False
+train,teamviewer_user,rat,WS-FIN-231,T1219,Needs Investigation,False
+train,ps_encoded_sccm,encps,WS-MKT-070,T1059.001,Benign True Positive,False
+train,rclone_wrong_remote,cloudsync,SRV-BKP05,T1567.002,True Positive,False
+train,internal_tool_task,schtask,WS-LGL-084,T1053.005,Benign True Positive,False
+train,office_child_splwow,officechild,WS-LGL-126,T1204.002,False Positive,True
+train,discovery_mal,recon,WS-ENG-065,T1087.002,True Positive,False
+train,rclone_mal,cloudsync,SRV-FILE09,T1567.002,True Positive,True
+train,psexec_mal,remsvc,WS-MKT-074,T1569.002,True Positive,False
+train,rat_mal,rat,WS-FIN-087,T1219,True Positive,False
+train,rundll32_mal,rundll32,WS-MKT-102,T1218.011,True Positive,False
+train,office_child_addin,officechild,WS-FIN-012,T1204.002,False Positive,False
+train,lsass_procdump,lsass,WS-LGL-111,T1003.001,True Positive,False
+train,rat_mal,rat,WS-FIN-189,T1219,True Positive,False
+train,runkey_mal,runkey,WS-LGL-080,T1547.001,True Positive,False
+train,office_child_mal,officechild,WS-HR-045,T1204.002,True Positive,True
+train,runkey_benign,runkey,WS-MKT-030,T1547.001,Benign True Positive,False
+train,sql_cmd,svcshell,SRV-SQL11,T1059.003,Needs Investigation,True
+train,rundll32_mal,rundll32,WS-ENG-189,T1218.011,True Positive,False
+train,internal_tool_task,schtask,WS-SLS-150,T1053.005,Benign True Positive,False
+train,webshell_fp,webchild,SRV-WEB11,T1505.003,False Positive,False
+train,certutil_hashfile,certutil,WS-IT-048,T1218,False Positive,False
+train,vss_benign,vss,SRV-APP06,T1490,False Positive,True
+train,certutil_hashfile,certutil,WS-IT-007,T1218,False Positive,False
+train,defender_mal,defender,WS-FIN-218,T1562.001,True Positive,False
+train,schtask_mal,schtask,WS-FIN-180,T1053.005,True Positive,False
+train,office_child_fake_splwow,officechild,WS-FIN-133,T1204.002,True Positive,False
+train,ps_encoded_fake_sccm,encps,WS-MKT-056,T1059.001,True Positive,False
+train,ps_encoded_fake_sccm,encps,WS-FIN-239,T1059.001,True Positive,False
+train,lsass_fake_werfault,lsass,WS-ENG-194,T1003.001,True Positive,True
+train,runkey_masq,runkey,WS-LGL-023,T1547.001,True Positive,False
+train,rclone_wrong_remote,cloudsync,SRV-BKP08,T1567.002,True Positive,False
+train,internal_tool_task,schtask,WS-LGL-035,T1053.005,Benign True Positive,False
+train,office_child_mal,officechild,WS-SLS-210,T1204.002,True Positive,False
+train,defender_benign,defender,WS-SLS-188,T1562.001,Benign True Positive,False
+train,webshell_fp,webchild,SRV-APP11,T1505.003,False Positive,False
+train,runkey_masq,runkey,WS-SLS-140,T1547.001,True Positive,True
+train,ransom_mal,massfile,SRV-FILE10,T1486,True Positive,False
+train,office_child_fake_splwow,officechild,WS-SLS-139,T1204.002,True Positive,False
+train,rat_mal,rat,WS-FIN-117,T1219,True Positive,False
+train,office_child_addin,officechild,WS-FIN-175,T1204.002,False Positive,True
+train,office_child_addin,officechild,WS-FIN-130,T1204.002,False Positive,False
+train,rundll32_benign,rundll32,WS-HR-017,T1218.011,False Positive,False
+train,ps_encoded_office,encps,WS-LGL-186,T1059.001,True Positive,False
+train,sql_cmd,svcshell,SRV-SQL03,T1059.003,Needs Investigation,True
+train,lsass_fake_werfault,lsass,WS-SLS-216,T1003.001,True Positive,False
+train,lsass_procdump,lsass,WS-MKT-018,T1003.001,True Positive,True
+train,office_child_fake_splwow,officechild,WS-HR-013,T1204.002,True Positive,False
+train,webshell_mal,webchild,SRV-WEB05,T1505.003,True Positive,False
+train,psexec_mal,remsvc,WS-ENG-050,T1569.002,True Positive,False
+train,ps_encoded_sccm,encps,WS-ENG-217,T1059.001,Benign True Positive,False
+train,certutil_download,certutil,WS-MKT-242,T1105,True Positive,False
+train,office_child_fake_splwow,officechild,WS-HR-249,T1204.002,True Positive,False
+train,lsass_werfault,lsass,SRV-APP06,T1003.001,False Positive,True
+train,rclone_wrong_remote,cloudsync,SRV-BKP05,T1567.002,True Positive,False
+train,discovery_mal,recon,WS-MKT-157,T1087.002,True Positive,False
+train,rclone_wrong_remote,cloudsync,SRV-BKP03,T1567.002,True Positive,False
+train,rundll32_mal,rundll32,WS-LGL-155,T1218.011,True Positive,False
+train,ransom_mal,massfile,SRV-FILE06,T1486,True Positive,True
+train,office_child_addin,officechild,WS-FIN-219,T1204.002,False Positive,False
+train,rclone_benign,cloudsync,SRV-BKP11,T1567.002,Benign True Positive,False
+train,runkey_benign,runkey,WS-MKT-208,T1547.001,Benign True Positive,False
+train,office_child_mal,officechild,WS-LGL-009,T1204.002,True Positive,False
+train,runkey_masq,runkey,WS-FIN-008,T1547.001,True Positive,False
+train,rclone_benign,cloudsync,SRV-BKP11,T1567.002,Benign True Positive,True
+train,ransom_benign,massfile,SRV-FILE06,T1486,False Positive,False
+train,psexec_benign,remsvc,JMP-ADM12,T1569.002,Needs Investigation,True
+train,psexec_mal,remsvc,WS-SLS-226,T1569.002,True Positive,False
+train,runkey_masq,runkey,WS-HR-236,T1547.001,True Positive,False
+train,discovery_benign,recon,WS-IT-040,T1087.002,Benign True Positive,False
+train,schtask_mal,schtask,WS-LGL-051,T1053.005,True Positive,False
+train,runkey_mal,runkey,WS-ENG-168,T1547.001,True Positive,False
+train,certutil_hashfile,certutil,WS-IT-004,T1218,False Positive,True
+train,runkey_masq,runkey,WS-FIN-186,T1547.001,True Positive,False
+train,psexec_ambiguous,remsvc,WS-ENG-090,T1569.002,Needs Investigation,False
+train,office_child_mal,officechild,WS-FIN-138,T1204.002,True Positive,False
+train,internal_tool_task,schtask,WS-ENG-072,T1053.005,Benign True Positive,False
+train,teamviewer_user,rat,WS-FIN-002,T1219,Needs Investigation,False
+train,lsass_procdump,lsass,WS-ENG-082,T1003.001,True Positive,False
+train,vss_benign,vss,SRV-APP10,T1490,False Positive,True
+train,ransom_benign,massfile,SRV-FILE05,T1486,False Positive,False
+train,rclone_benign,cloudsync,SRV-BKP01,T1567.002,Benign True Positive,True
+train,office_child_splwow,officechild,WS-HR-247,T1204.002,False Positive,False
+train,psexec_mal,remsvc,WS-HR-034,T1569.002,True Positive,True
+train,ransom_benign,massfile,SRV-FILE06,T1486,False Positive,True
+train,rclone_wrong_remote,cloudsync,SRV-BKP07,T1567.002,True Positive,False
+train,ransom_benign,massfile,SRV-FILE07,T1486,False Positive,True
+train,ps_encoded_sccm,encps,WS-LGL-244,T1059.001,Benign True Positive,False
+train,rclone_wrong_remote,cloudsync,SRV-BKP04,T1567.002,True Positive,False
+train,rat_mal,rat,WS-FIN-096,T1219,True Positive,True
+train,discovery_benign,recon,WS-IT-023,T1087.002,Benign True Positive,False
+train,teamviewer_user,rat,WS-FIN-134,T1219,Needs Investigation,False
+train,webshell_mal,webchild,SRV-WEB04,T1505.003,True Positive,False
+train,teamviewer_user,rat,WS-ENG-161,T1219,True Positive,True
+train,webshell_mal,webchild,SRV-WEB06,T1505.003,True Positive,True
+train,office_child_mal,officechild,WS-LGL-110,T1204.002,True Positive,False
+train,lsass_procdump,lsass,WS-MKT-209,T1003.001,True Positive,False
+train,rat_benign,rat,WS-IT-055,T1219,Benign True Positive,False
+train,schtask_benign,schtask,WS-LGL-105,T1053.005,Benign True Positive,True
+train,office_child_splwow,officechild,WS-LGL-132,T1204.002,False Positive,False
+train,vss_mal,vss,SRV-FILE10,T1490,True Positive,False
+train,rat_mal,rat,WS-FIN-134,T1219,True Positive,True
+train,vss_mal,vss,SRV-FILE08,T1490,True Positive,False
+train,vss_benign,vss,SRV-APP10,T1490,False Positive,True
+train,rclone_mal,cloudsync,SRV-FILE08,T1567.002,True Positive,False
+train,defender_mal,defender,WS-HR-209,T1562.001,True Positive,False
+train,ransom_benign,massfile,SRV-FILE05,T1486,False Positive,True
+train,sql_cmd,svcshell,SRV-SQL04,T1059.003,Needs Investigation,False
+train,lsass_werfault,lsass,SRV-SQL01,T1003.001,False Positive,False
+train,ps_encoded_ambiguous,encps,WS-FIN-186,T1087.002,Needs Investigation,False
+train,psexec_benign,remsvc,JMP-ADM12,T1569.002,Benign True Positive,False
+train,rundll32_benign,rundll32,WS-MKT-246,T1218.011,False Positive,False
+train,webshell_fp,webchild,SRV-WEB12,T1505.003,False Positive,False
+train,rundll32_mal,rundll32,WS-HR-001,T1218.011,True Positive,True
+train,psexec_ambiguous,remsvc,WS-LGL-118,T1569.002,Needs Investigation,False
+train,defender_mal,defender,WS-LGL-096,T1562.001,True Positive,True
+train,teamviewer_user,rat,WS-ENG-020,T1219,Needs Investigation,False
+train,runkey_benign,runkey,WS-MKT-033,T1547.001,Benign True Positive,False
+train,defender_benign,defender,WS-MKT-080,T1562.001,Benign True Positive,False
+train,ps_encoded_fake_sccm,encps,WS-FIN-096,T1059.001,True Positive,False
+train,rclone_wrong_remote,cloudsync,SRV-BKP09,T1567.002,True Positive,True
+train,ps_encoded_office,encps,WS-HR-075,T1059.001,True Positive,False
+train,defender_benign,defender,WS-MKT-099,T1562.001,Benign True Positive,False
+train,rclone_mal,cloudsync,SRV-FILE08,T1567.002,True Positive,False
+train,defender_mal,defender,WS-FIN-180,T1562.001,True Positive,False
+train,office_child_addin,officechild,WS-FIN-165,T1204.002,False Positive,True
+train,office_child_splwow,officechild,WS-ENG-062,T1204.002,False Positive,False
+train,discovery_benign,recon,WS-IT-017,T1087.002,Benign True Positive,False
+train,discovery_benign,recon,WS-IT-055,T1087.002,Benign True Positive,False
+train,rat_benign,rat,WS-IT-048,T1219,Benign True Positive,True
+train,rclone_benign,cloudsync,SRV-BKP09,T1567.002,Benign True Positive,False
+train,defender_mal,defender,WS-SLS-136,T1562.001,True Positive,True
+train,rclone_wrong_remote,cloudsync,SRV-BKP03,T1567.002,True Positive,False
+train,psexec_mal,remsvc,WS-MKT-136,T1569.002,True Positive,False
+train,webshell_fp,webchild,SRV-APP04,T1505.003,False Positive,False
+train,ps_encoded_sccm,encps,WS-SLS-123,T1059.001,Benign True Positive,False
+train,ps_encoded_fake_sccm,encps,WS-FIN-017,T1059.001,True Positive,False
+train,vss_mal,vss,SRV-FILE08,T1490,True Positive,False
+train,webshell_mal,webchild,SRV-WEB09,T1505.003,True Positive,False
+train,psexec_mal,remsvc,WS-HR-150,T1569.002,True Positive,True
+train,rat_mal,rat,WS-FIN-158,T1219,True Positive,False
+train,discovery_mal,recon,WS-LGL-152,T1087.002,True Positive,False
+train,lsass_fake_werfault,lsass,WS-LGL-026,T1003.001,True Positive,False
+train,runkey_mal,runkey,WS-HR-162,T1547.001,True Positive,False
+train,rundll32_benign,rundll32,WS-SLS-015,T1218.011,False Positive,False
+train,internal_tool_task,schtask,WS-SLS-127,T1053.005,Benign True Positive,False
+train,psexec_ambiguous,remsvc,WS-MKT-084,T1569.002,Needs Investigation,False
+train,rclone_wrong_remote,cloudsync,SRV-BKP10,T1567.002,True Positive,False
+train,schtask_mal,schtask,WS-FIN-069,T1053.005,True Positive,False
+train,ransom_mal,massfile,SRV-FILE01,T1486,True Positive,False
+train,webshell_fp,webchild,SRV-APP10,T1505.003,False Positive,True
+train,schtask_benign,schtask,WS-MKT-094,T1053.005,Benign True Positive,False
+train,certutil_download,certutil,WS-MKT-034,T1105,True Positive,False
+train,schtask_benign,schtask,WS-HR-038,T1053.005,Benign True Positive,False
+train,psexec_mal,remsvc,WS-LGL-242,T1569.002,True Positive,False
+train,webshell_mal,webchild,SRV-WEB10,T1505.003,True Positive,True
+train,rclone_mal,cloudsync,SRV-FILE02,T1567.002,True Positive,False
+train,certutil_hashfile,certutil,WS-IT-039,T1218,False Positive,False
+train,runkey_masq,runkey,WS-HR-161,T1547.001,True Positive,True
+train,rclone_wrong_remote,cloudsync,SRV-BKP04,T1567.002,True Positive,True
+train,rundll32_mal,rundll32,WS-MKT-045,T1218.011,True Positive,False
+train,sql_cmd,svcshell,SRV-SQL11,T1059.003,Needs Investigation,False
+train,psexec_mal,remsvc,WS-LGL-069,T1569.002,True Positive,False
+train,runkey_mal,runkey,WS-FIN-155,T1547.001,True Positive,False
+train,ransom_mal,massfile,SRV-FILE07,T1486,True Positive,False
+train,certutil_download,certutil,WS-LGL-203,T1105,True Positive,False
+train,sql_cmd,svcshell,SRV-SQL06,T1059.003,Needs Investigation,False
+train,psexec_benign,remsvc,JMP-ADM09,T1569.002,Benign True Positive,False
+train,schtask_benign,schtask,WS-ENG-085,T1053.005,Benign True Positive,True
+train,vss_benign,vss,SRV-FILE03,T1490,False Positive,False
+train,certutil_download,certutil,WS-FIN-011,T1105,True Positive,False
+train,runkey_mal,runkey,WS-FIN-034,T1547.001,True Positive,True
+train,runkey_benign,runkey,WS-LGL-074,T1547.001,Benign True Positive,True
+train,rundll32_mal,rundll32,WS-FIN-059,T1218.011,True Positive,False
+train,lsass_werfault,lsass,SRV-APP01,T1003.001,False Positive,False
+train,vss_mal,vss,SRV-FILE07,T1490,True Positive,False
+train,ransom_mal,massfile,SRV-FILE06,T1486,True Positive,True
+train,runkey_benign,runkey,WS-HR-065,T1547.001,Benign True Positive,False
+train,schtask_mal,schtask,WS-LGL-039,T1053.005,True Positive,True
+train,psexec_mal,remsvc,WS-MKT-178,T1569.002,True Positive,True
+train,rat_benign,rat,WS-IT-035,T1219,Benign True Positive,False
+train,psexec_benign,remsvc,JMP-ADM04,T1569.002,Benign True Positive,False
+train,office_child_splwow,officechild,WS-LGL-195,T1204.002,False Positive,False
+train,psexec_mal,remsvc,WS-HR-226,T1569.002,True Positive,True
+train,internal_tool_task,schtask,WS-HR-046,T1053.005,Benign True Positive,False
+train,ransom_benign,massfile,SRV-FILE11,T1486,False Positive,False
+train,office_child_addin,officechild,WS-FIN-049,T1204.002,False Positive,False
+train,runkey_benign,runkey,WS-FIN-012,T1547.001,Benign True Positive,False
+train,runkey_masq,runkey,WS-LGL-054,T1547.001,True Positive,False
+train,webshell_fp,webchild,SRV-APP10,T1505.003,False Positive,True
+train,discovery_benign,recon,WS-IT-050,T1087.002,Benign True Positive,True
+train,psexec_ambiguous,remsvc,WS-ENG-010,T1569.002,Needs Investigation,False
+train,sql_cmd,svcshell,SRV-SQL10,T1059.003,Needs Investigation,False
+train,lsass_fake_werfault,lsass,WS-SLS-173,T1003.001,True Positive,True
+train,rat_benign,rat,WS-IT-060,T1219,Benign True Positive,True
+train,office_child_mal,officechild,WS-MKT-197,T1204.002,True Positive,True
+train,rundll32_benign,rundll32,WS-MKT-145,T1218.011,False Positive,False
+train,runkey_benign,runkey,WS-SLS-228,T1547.001,Benign True Positive,True
+train,schtask_mal,schtask,WS-LGL-217,T1053.005,True Positive,False
+train,lsass_werfault,lsass,SRV-SQL12,T1003.001,False Positive,False
+train,rat_mal,rat,WS-FIN-233,T1219,True Positive,False
+train,webshell_mal,webchild,SRV-WEB02,T1505.003,True Positive,False
+train,schtask_mal,schtask,WS-HR-212,T1053.005,True Positive,False
+train,internal_tool_task,schtask,WS-ENG-247,T1053.005,Benign True Positive,False
+train,rundll32_benign,rundll32,WS-SLS-218,T1218.011,False Positive,False
+train,psexec_mal,remsvc,WS-ENG-050,T1569.002,True Positive,False
+train,rclone_mal,cloudsync,SRV-FILE12,T1567.002,True Positive,True
+train,certutil_download,certutil,WS-LGL-026,T1105,True Positive,False
+train,schtask_benign,schtask,WS-SLS-219,T1053.005,Benign True Positive,False
+train,ps_encoded_sccm,encps,WS-ENG-049,T1059.001,Benign True Positive,False
+train,ps_encoded_ambiguous,encps,WS-LGL-240,T1087.002,True Positive,True
+train,ps_encoded_sccm,encps,WS-HR-075,T1059.001,Benign True Positive,False
+train,lsass_fake_werfault,lsass,WS-LGL-137,T1003.001,True Positive,False
+train,teamviewer_user,rat,WS-MKT-036,T1219,Needs Investigation,False
+train,teamviewer_user,rat,WS-MKT-079,T1219,Needs Investigation,False
+train,certutil_download,certutil,WS-HR-238,T1105,True Positive,False
+train,rclone_benign,cloudsync,SRV-BKP08,T1567.002,Benign True Positive,False
+train,discovery_mal,recon,WS-ENG-226,T1087.002,True Positive,True
+train,defender_mal,defender,WS-HR-229,T1562.001,True Positive,False
+train,office_child_fake_splwow,officechild,WS-HR-130,T1204.002,True Positive,False
+train,internal_tool_task,schtask,WS-FIN-233,T1053.005,Benign True Positive,False
+train,ps_encoded_fake_sccm,encps,WS-SLS-134,T1059.001,True Positive,False
+train,webshell_mal,webchild,SRV-WEB06,T1505.003,True Positive,True
+train,psexec_benign,remsvc,JMP-ADM04,T1569.002,Benign True Positive,True
+train,rclone_benign,cloudsync,SRV-BKP03,T1567.002,Benign True Positive,False
+train,schtask_mal,schtask,WS-MKT-196,T1053.005,True Positive,False
+train,rundll32_mal,rundll32,WS-ENG-195,T1218.011,True Positive,False
+train,rat_mal,rat,WS-FIN-110,T1219,True Positive,False
+train,office_child_mal,officechild,WS-HR-051,T1204.002,True Positive,False
+train,office_child_splwow,officechild,WS-ENG-027,T1204.002,False Positive,True
+train,defender_mal,defender,WS-SLS-139,T1562.001,True Positive,True
+train,ps_encoded_sccm,encps,WS-SLS-087,T1059.001,Benign True Positive,False
+train,schtask_benign,schtask,WS-HR-029,T1053.005,Benign True Positive,False
+train,certutil_hashfile,certutil,WS-IT-031,T1218,False Positive,True
+train,schtask_benign,schtask,WS-SLS-175,T1053.005,Benign True Positive,True
+train,teamviewer_user,rat,WS-ENG-064,T1219,Needs Investigation,False
+train,webshell_fp,webchild,SRV-APP07,T1505.003,False Positive,True
+train,rclone_wrong_remote,cloudsync,SRV-BKP11,T1567.002,True Positive,False
+train,runkey_mal,runkey,WS-MKT-002,T1547.001,True Positive,False
+train,vss_mal,vss,SRV-FILE12,T1490,True Positive,False
+train,discovery_mal,recon,WS-FIN-010,T1087.002,True Positive,True
+train,certutil_hashfile,certutil,WS-IT-008,T1218,False Positive,True
+train,rclone_mal,cloudsync,SRV-FILE06,T1567.002,True Positive,True
+train,sql_cmd,svcshell,SRV-SQL06,T1059.003,Needs Investigation,False
+train,runkey_masq,runkey,WS-FIN-157,T1547.001,True Positive,False
+train,ps_encoded_office,encps,WS-LGL-150,T1059.001,True Positive,True
+train,discovery_benign,recon,WS-IT-036,T1087.002,Benign True Positive,True
+train,psexec_benign,remsvc,JMP-ADM05,T1569.002,Benign True Positive,False
+train,runkey_mal,runkey,WS-FIN-057,T1547.001,True Positive,False
+train,rclone_benign,cloudsync,SRV-BKP11,T1567.002,Benign True Positive,False
+train,schtask_mal,schtask,WS-LGL-072,T1053.005,True Positive,False
+test,discovery_benign,recon,WS-IT-048,T1087.002,Benign True Positive,False
+test,defender_mal,defender,WS-ENG-056,T1562.001,True Positive,False
+test,internal_tool_task,schtask,WS-LGL-196,T1053.005,Benign True Positive,False
+test,lsass_procdump,lsass,WS-FIN-217,T1003.001,True Positive,True
+test,ps_encoded_fake_sccm,encps,WS-ENG-208,T1059.001,True Positive,False
+test,ransom_benign,massfile,SRV-FILE11,T1486,False Positive,False
+test,office_child_addin,officechild,WS-FIN-171,T1204.002,False Positive,False
+test,rclone_benign,cloudsync,SRV-BKP07,T1567.002,Benign True Positive,False
+test,ps_encoded_ambiguous,encps,WS-MKT-145,T1087.002,True Positive,True
+test,internal_tool_task,schtask,WS-SLS-005,T1053.005,Benign True Positive,False
+test,ps_encoded_fake_sccm,encps,WS-LGL-048,T1059.001,True Positive,False
+test,defender_benign,defender,WS-LGL-155,T1562.001,Benign True Positive,False
+test,psexec_ambiguous,remsvc,WS-SLS-006,T1569.002,Needs Investigation,False
+test,runkey_mal,runkey,WS-FIN-213,T1547.001,True Positive,True
+test,certutil_hashfile,certutil,WS-IT-054,T1218,False Positive,False
+test,ransom_benign,massfile,SRV-FILE12,T1486,False Positive,False
+test,ps_encoded_ambiguous,encps,WS-LGL-028,T1087.002,Needs Investigation,False
+test,psexec_ambiguous,remsvc,WS-FIN-207,T1569.002,Needs Investigation,False
+test,ps_encoded_ambiguous,encps,WS-MKT-163,T1087.002,Needs Investigation,False
+test,rat_benign,rat,WS-IT-037,T1219,Benign True Positive,False
+test,webshell_mal,webchild,SRV-WEB01,T1505.003,True Positive,True
+test,rclone_benign,cloudsync,SRV-BKP06,T1567.002,Benign True Positive,False
+test,vss_mal,vss,SRV-FILE01,T1490,True Positive,False
+test,internal_tool_task,schtask,WS-FIN-059,T1053.005,Benign True Positive,False
+test,runkey_benign,runkey,WS-FIN-048,T1547.001,Benign True Positive,False
+test,sql_cmd,svcshell,SRV-SQL12,T1059.003,Needs Investigation,False
+test,rclone_mal,cloudsync,SRV-FILE07,T1567.002,True Positive,False
+test,vss_benign,vss,SRV-FILE04,T1490,False Positive,False
+test,ransom_benign,massfile,SRV-FILE04,T1486,False Positive,True
+test,sql_cmd,svcshell,SRV-SQL09,T1059.003,Needs Investigation,True
+test,rclone_mal,cloudsync,SRV-FILE09,T1567.002,True Positive,True
+test,ps_encoded_fake_sccm,encps,WS-SLS-172,T1059.001,True Positive,False
+test,schtask_benign,schtask,WS-MKT-136,T1053.005,Benign True Positive,False
+test,webshell_mal,webchild,SRV-WEB03,T1505.003,True Positive,False
+test,psexec_ambiguous,remsvc,WS-ENG-114,T1569.002,Needs Investigation,True
+test,ps_encoded_ambiguous,encps,WS-LGL-184,T1087.002,Needs Investigation,False
+test,lsass_werfault,lsass,SRV-APP07,T1003.001,False Positive,True
+test,internal_tool_task,schtask,WS-HR-196,T1053.005,Benign True Positive,False
+test,webshell_mal,webchild,SRV-WEB10,T1505.003,True Positive,True
+test,discovery_benign,recon,WS-IT-015,T1087.002,Benign True Positive,False
+test,rundll32_benign,rundll32,WS-SLS-011,T1218.011,False Positive,False
+test,discovery_mal,recon,WS-MKT-202,T1087.002,True Positive,False
+test,vss_mal,vss,SRV-FILE02,T1490,True Positive,False
+test,vss_benign,vss,SRV-APP01,T1490,False Positive,False
+test,office_child_fake_splwow,officechild,WS-LGL-201,T1204.002,True Positive,False
+test,defender_mal,defender,WS-SLS-185,T1562.001,True Positive,False
+test,office_child_fake_splwow,officechild,WS-MKT-079,T1204.002,True Positive,False
+test,lsass_werfault,lsass,SRV-SQL04,T1003.001,False Positive,True
+test,rclone_wrong_remote,cloudsync,SRV-BKP03,T1567.002,True Positive,True
+test,psexec_benign,remsvc,JMP-ADM02,T1569.002,Benign True Positive,False
+test,schtask_benign,schtask,WS-FIN-214,T1053.005,Benign True Positive,False
+test,rundll32_benign,rundll32,WS-MKT-046,T1218.011,False Positive,False
+test,psexec_mal,remsvc,WS-SLS-162,T1569.002,True Positive,False
+test,office_child_fake_splwow,officechild,WS-SLS-201,T1204.002,True Positive,False
+test,ps_encoded_sccm,encps,WS-HR-056,T1059.001,Benign True Positive,True
+test,ps_encoded_sccm,encps,WS-ENG-237,T1059.001,Benign True Positive,True
+test,office_child_addin,officechild,WS-FIN-071,T1204.002,False Positive,False
+test,rundll32_benign,rundll32,WS-FIN-101,T1218.011,False Positive,False
+test,ransom_benign,massfile,SRV-FILE09,T1486,False Positive,False
+test,defender_mal,defender,WS-HR-236,T1562.001,True Positive,False
+test,psexec_mal,remsvc,WS-LGL-046,T1569.002,True Positive,False
+test,ransom_mal,massfile,SRV-FILE08,T1486,True Positive,False
+test,schtask_mal,schtask,WS-LGL-114,T1053.005,True Positive,False
+test,discovery_benign,recon,WS-IT-013,T1087.002,Benign True Positive,False
+test,teamviewer_user,rat,WS-ENG-182,T1219,Needs Investigation,False
+test,webshell_fp,webchild,SRV-WEB01,T1505.003,False Positive,False
+test,runkey_masq,runkey,WS-HR-150,T1547.001,True Positive,False
+test,discovery_mal,recon,WS-SLS-003,T1087.002,True Positive,False
+test,sql_cmd,svcshell,SRV-SQL02,T1059.003,Needs Investigation,False
+test,ps_encoded_office,encps,WS-MKT-247,T1059.001,True Positive,False
+test,runkey_mal,runkey,WS-ENG-141,T1547.001,True Positive,True
+test,rclone_mal,cloudsync,SRV-FILE12,T1567.002,True Positive,False
+test,ps_encoded_fake_sccm,encps,WS-FIN-195,T1059.001,True Positive,False
+test,office_child_addin,officechild,WS-FIN-030,T1204.002,False Positive,False
+test,rclone_mal,cloudsync,SRV-FILE05,T1567.002,True Positive,False
+test,rat_benign,rat,WS-IT-033,T1219,Benign True Positive,False
+test,ps_encoded_ambiguous,encps,WS-LGL-240,T1087.002,Needs Investigation,True
+test,runkey_masq,runkey,WS-FIN-088,T1547.001,True Positive,False
+test,rat_benign,rat,WS-IT-045,T1219,Benign True Positive,False
+test,runkey_masq,runkey,WS-FIN-181,T1547.001,True Positive,False
+test,ps_encoded_office,encps,WS-HR-050,T1059.001,True Positive,True
+test,teamviewer_user,rat,WS-MKT-138,T1219,Needs Investigation,False
+test,office_child_splwow,officechild,WS-MKT-143,T1204.002,False Positive,False
+test,discovery_benign,recon,WS-IT-041,T1087.002,Benign True Positive,False
+test,rat_benign,rat,WS-IT-031,T1219,Benign True Positive,True
+test,discovery_mal,recon,WS-HR-037,T1087.002,True Positive,False
+test,ps_encoded_office,encps,WS-HR-029,T1059.001,True Positive,False
+test,vss_benign,vss,SRV-SQL12,T1490,False Positive,True
+test,vss_benign,vss,SRV-APP03,T1490,False Positive,False
+test,defender_benign,defender,WS-MKT-245,T1562.001,Benign True Positive,True
+test,rclone_benign,cloudsync,SRV-BKP08,T1567.002,Benign True Positive,False
+holdout,lsass_comsvcs,lsass,WS-SLS-043,T1003.001,True Positive,False
+holdout,lsass_comsvcs,lsass,WS-FIN-030,T1003.001,True Positive,False
+holdout,lsass_comsvcs,lsass,WS-HR-092,T1003.001,True Positive,False
+holdout,lsass_comsvcs,lsass,WS-FIN-080,T1003.001,True Positive,False
+holdout,lsass_comsvcs,lsass,WS-ENG-173,T1003.001,True Positive,False
+holdout,lsass_comsvcs,lsass,WS-SLS-118,T1003.001,True Positive,True
+holdout,lsass_comsvcs,lsass,WS-SLS-143,T1003.001,True Positive,False
+holdout,lsass_comsvcs,lsass,WS-HR-220,T1003.001,True Positive,False
+holdout,lsass_comsvcs,lsass,WS-FIN-048,T1003.001,True Positive,False
+holdout,lsass_comsvcs,lsass,WS-LGL-191,T1003.001,True Positive,False
+holdout,lsass_comsvcs,lsass,WS-MKT-246,T1003.001,True Positive,True
+holdout,lsass_comsvcs,lsass,WS-MKT-117,T1003.001,True Positive,False
+holdout,lsass_comsvcs,lsass,WS-LGL-121,T1003.001,True Positive,False
+holdout,lsass_comsvcs,lsass,WS-SLS-033,T1003.001,True Positive,False
+holdout,lsass_comsvcs,lsass,WS-HR-244,T1003.001,True Positive,False
+holdout,lsass_comsvcs,lsass,WS-HR-013,T1003.001,True Positive,False
+holdout,lsass_comsvcs,lsass,WS-ENG-086,T1003.001,True Positive,False
+holdout,lsass_comsvcs,lsass,WS-LGL-177,T1003.001,True Positive,False
+holdout,lsass_comsvcs,lsass,WS-SLS-156,T1003.001,True Positive,False
+holdout,lsass_comsvcs,lsass,WS-MKT-122,T1003.001,True Positive,False
+holdout,lsass_comsvcs,lsass,WS-HR-109,T1003.001,True Positive,True
+holdout,lsass_comsvcs,lsass,WS-SLS-004,T1003.001,True Positive,False
+holdout,lsass_comsvcs,lsass,WS-LGL-116,T1003.001,True Positive,False
+holdout,lsass_comsvcs,lsass,WS-ENG-213,T1003.001,True Positive,False
+holdout,lsass_comsvcs,lsass,WS-MKT-100,T1003.001,True Positive,True
+holdout,lsass_comsvcs,lsass,WS-FIN-147,T1003.001,True Positive,False
+holdout,lsass_comsvcs,lsass,WS-MKT-238,T1003.001,True Positive,False
+holdout,lsass_comsvcs,lsass,WS-LGL-128,T1003.001,True Positive,True
+holdout,dev_ps_github,encps,WS-ENG-031,T1059.001,Needs Investigation,True
+holdout,dev_ps_github,encps,WS-ENG-207,T1059.001,Needs Investigation,False
+holdout,dev_ps_github,encps,WS-ENG-016,T1059.001,Needs Investigation,False
+holdout,dev_ps_github,encps,WS-ENG-113,T1059.001,Needs Investigation,False
+holdout,dev_ps_github,encps,WS-ENG-071,T1059.001,Needs Investigation,False
+holdout,dev_ps_github,encps,WS-ENG-132,T1059.001,Benign True Positive,True
+holdout,dev_ps_github,encps,WS-ENG-021,T1059.001,Needs Investigation,False
+holdout,dev_ps_github,encps,WS-ENG-017,T1059.001,Needs Investigation,False
+holdout,dev_ps_github,encps,WS-ENG-158,T1059.001,Needs Investigation,False
+holdout,dev_ps_github,encps,WS-ENG-045,T1059.001,Needs Investigation,False
+holdout,dev_ps_github,encps,WS-ENG-003,T1059.001,Needs Investigation,False
+holdout,dev_ps_github,encps,WS-ENG-221,T1059.001,Needs Investigation,False
+holdout,dev_ps_github,encps,WS-ENG-214,T1059.001,Needs Investigation,False
+holdout,dev_ps_github,encps,WS-ENG-106,T1059.001,Benign True Positive,True
+holdout,dev_ps_github,encps,WS-ENG-245,T1059.001,Needs Investigation,False
+holdout,dev_ps_github,encps,WS-ENG-036,T1059.001,Needs Investigation,True
+holdout,dev_ps_github,encps,WS-ENG-108,T1059.001,Needs Investigation,True
+holdout,dev_ps_github,encps,WS-ENG-078,T1059.001,Needs Investigation,False
+holdout,dev_ps_github,encps,WS-ENG-103,T1059.001,Benign True Positive,True
+holdout,dev_ps_github,encps,WS-ENG-217,T1059.001,Needs Investigation,False
+holdout,dev_ps_github,encps,WS-ENG-083,T1059.001,Needs Investigation,False
+holdout,dev_ps_github,encps,WS-ENG-179,T1059.001,Needs Investigation,False
+holdout,dev_ps_github,encps,WS-ENG-201,T1059.001,Benign True Positive,True
+holdout,dev_ps_github,encps,WS-ENG-055,T1059.001,Needs Investigation,False
+holdout,dev_ps_github,encps,WS-ENG-207,T1059.001,Needs Investigation,False
+holdout,dev_ps_github,encps,WS-ENG-017,T1059.001,Benign True Positive,True
+holdout,dev_ps_github,encps,WS-ENG-099,T1059.001,Needs Investigation,False
+holdout,dev_ps_github,encps,WS-ENG-190,T1059.001,Needs Investigation,False
+holdout,certutil_decode,certutil,WS-MKT-195,T1140,True Positive,False
+holdout,certutil_decode,certutil,WS-SLS-111,T1140,True Positive,False
+holdout,certutil_decode,certutil,WS-FIN-219,T1140,True Positive,False
+holdout,certutil_decode,certutil,WS-LGL-004,T1140,True Positive,False
+holdout,certutil_decode,certutil,WS-FIN-048,T1140,True Positive,False
+holdout,certutil_decode,certutil,WS-FIN-235,T1140,True Positive,False
+holdout,certutil_decode,certutil,WS-LGL-195,T1140,True Positive,True
+holdout,certutil_decode,certutil,WS-ENG-110,T1140,True Positive,False
+holdout,certutil_decode,certutil,WS-SLS-060,T1140,True Positive,False
+holdout,certutil_decode,certutil,WS-SLS-093,T1140,True Positive,False
+holdout,certutil_decode,certutil,WS-ENG-132,T1140,True Positive,False
+holdout,certutil_decode,certutil,WS-MKT-064,T1140,True Positive,False
+holdout,certutil_decode,certutil,WS-HR-158,T1140,True Positive,False
+holdout,certutil_decode,certutil,WS-HR-220,T1140,True Positive,True
+holdout,certutil_decode,certutil,WS-MKT-141,T1140,True Positive,False
+holdout,certutil_decode,certutil,WS-HR-182,T1140,True Positive,False
+holdout,certutil_decode,certutil,WS-LGL-222,T1140,True Positive,False
+holdout,certutil_decode,certutil,WS-FIN-195,T1140,True Positive,False
+holdout,certutil_decode,certutil,WS-ENG-203,T1140,True Positive,False
+holdout,certutil_decode,certutil,WS-ENG-146,T1140,True Positive,False
+holdout,certutil_decode,certutil,WS-FIN-129,T1140,True Positive,True
+holdout,certutil_decode,certutil,WS-ENG-085,T1140,True Positive,False
+holdout,certutil_decode,certutil,WS-ENG-248,T1140,True Positive,False
+holdout,certutil_decode,certutil,WS-LGL-011,T1140,True Positive,False
+holdout,certutil_decode,certutil,WS-SLS-007,T1140,True Positive,False
+holdout,certutil_decode,certutil,WS-MKT-065,T1140,True Positive,False
+holdout,certutil_decode,certutil,WS-ENG-134,T1140,True Positive,False
+holdout,certutil_decode,certutil,WS-SLS-099,T1140,True Positive,False
+holdout,defender_fake_intune,defender,WS-ENG-205,T1562.001,True Positive,False
+holdout,defender_fake_intune,defender,WS-ENG-101,T1562.001,True Positive,False
+holdout,defender_fake_intune,defender,WS-HR-001,T1562.001,True Positive,False
+holdout,defender_fake_intune,defender,WS-HR-087,T1562.001,True Positive,True
+holdout,defender_fake_intune,defender,WS-SLS-218,T1562.001,True Positive,True
+holdout,defender_fake_intune,defender,WS-FIN-194,T1562.001,True Positive,True
+holdout,defender_fake_intune,defender,WS-ENG-064,T1562.001,True Positive,True
+holdout,defender_fake_intune,defender,WS-HR-065,T1562.001,True Positive,True
+holdout,defender_fake_intune,defender,WS-SLS-114,T1562.001,True Positive,False
+holdout,defender_fake_intune,defender,WS-MKT-235,T1562.001,True Positive,False
+holdout,defender_fake_intune,defender,WS-SLS-029,T1562.001,True Positive,False
+holdout,defender_fake_intune,defender,WS-FIN-180,T1562.001,True Positive,True
+holdout,defender_fake_intune,defender,WS-LGL-153,T1562.001,True Positive,False
+holdout,defender_fake_intune,defender,WS-SLS-107,T1562.001,True Positive,False
+holdout,defender_fake_intune,defender,WS-MKT-050,T1562.001,True Positive,False
+holdout,defender_fake_intune,defender,WS-ENG-084,T1562.001,True Positive,True
+holdout,defender_fake_intune,defender,WS-ENG-112,T1562.001,True Positive,True
+holdout,defender_fake_intune,defender,WS-HR-219,T1562.001,True Positive,True
+holdout,defender_fake_intune,defender,WS-SLS-162,T1562.001,True Positive,True
+holdout,defender_fake_intune,defender,WS-MKT-046,T1562.001,True Positive,False
+holdout,defender_fake_intune,defender,WS-SLS-085,T1562.001,True Positive,False
+holdout,defender_fake_intune,defender,WS-MKT-214,T1562.001,True Positive,True
+holdout,defender_fake_intune,defender,WS-HR-097,T1562.001,True Positive,False
+holdout,defender_fake_intune,defender,WS-FIN-072,T1562.001,True Positive,False
+holdout,defender_fake_intune,defender,WS-MKT-167,T1562.001,True Positive,False
+holdout,defender_fake_intune,defender,WS-SLS-126,T1562.001,True Positive,False
+holdout,defender_fake_intune,defender,WS-LGL-040,T1562.001,True Positive,False
+holdout,defender_fake_intune,defender,WS-ENG-067,T1562.001,True Positive,True

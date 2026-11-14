@@ -1,0 +1,57 @@
+{
+  "id": "__ORG_ID__",
+  "name": "__ORG_ID__ (edit me)",
+  "_help": "See docs/INTEGRATION.md for every field. Paths are relative to this folder. Run 'python -m capstone --org __ORG_ID__ org validate' after each change.",
+
+  "knowledge": {
+    "triage": ["playbooks/*.md", "knowledge/*.md"],
+    "ir": ["playbooks/*.md", "ir/*.md"]
+  },
+
+  "disposition": {
+    "close_threshold": 0.85,
+    "confidence_score": {"High": 0.9, "Medium": 0.7, "Low": 0.5}
+  },
+
+  "assets": {
+    "default": "medium",
+    "rules": [
+      {"host_prefix": ["DC-"], "level": "critical", "tier0": true},
+      {"device_group_contains": ["server"], "level": "high"},
+      {"device_group_prefix": ["lab", "test"], "level": "low"}
+    ]
+  },
+
+  "identity": {
+    "roster_file": "knowledge/privileged_accounts.csv",
+    "account_column": "account",
+    "status_column": "status",
+    "disabled_marker": "DISABLED",
+    "privileged_prefixes": ["adm-"],
+    "tier0_accounts": ["krbtgt", "domain admins", "enterprise admins"]
+  },
+
+  "severity": {
+    "levels": {"SEV1": 7, "SEV2": 5, "SEV3": 3}
+  },
+
+  "escalation_policy": [
+    {"id": "case", "action": "open_case", "when": {"always": true}, "reason": "Every incident gets a case"},
+    {"id": "war-room", "action": "create_channel", "when": {"severity_at_most": "SEV3"}, "reason": "War-room for SEV1-SEV3"},
+    {"id": "summary", "action": "post_summary", "when": {"severity_at_most": "SEV3"}, "reason": "Brief the war-room"},
+    {"id": "page-ir", "action": "page_oncall", "target": "IR on-call (edit me)",
+     "when": {"severity_at_most": "SEV2"}, "reason": "SEV1-SEV2 page IR on-call"},
+    {"id": "ciso", "action": "add_stakeholder", "target": "CISO (edit me)",
+     "when": {"severity_at_most": "SEV1"}, "reason": "SEV1 incident"},
+    {"id": "legal", "action": "add_stakeholder", "target": "Legal / Privacy (edit me)",
+     "when": {"signals_any": ["exfiltration"]}, "reason": "Suspected data exfiltration"}
+  ],
+
+  "actuators": {
+    "chat": {"type": "mock"},
+    "pager": {"type": "mock"},
+    "case": {"type": "mock"}
+  },
+
+  "ingest": {"api_key_env": "SOC_INGEST_KEY"}
+}

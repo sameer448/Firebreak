@@ -1,0 +1,24 @@
+Triage this alert:
+
+EDR ALERT (JSON)
+{
+  "detection_name": "Suspicious encoded PowerShell command",
+  "severity": "Medium",
+  "timestamp": "2026-08-22T17:39:35Z",
+  "device": {
+    "hostname": "WS-FIN-082",
+    "device_group": "Finance Workstations",
+    "os": "Windows 11 23H2"
+  },
+  "user": "NT AUTHORITY\\SYSTEM",
+  "process": {
+    "image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "command_line": "powershell.exe -NoLogo -NonInteractive -ExecutionPolicy Bypass -EncodedCommand RwBlAHQALQBIAG8AdABGAGkAeAAgAHwAIABTAG8AcgB0AC0ATwBiAGoAZQBjAHQAIABJAG4AcwB0AGEAbABsAGUAZABPAG4AIAAtAEQAZQBzAGMAZQBuAGQAaQBuAGcAIAB8ACAAUwBlAGwAZQBjAHQALQBPAGIAagBlAGMAdAAgAC0ARgBpAHIAcwB0ACAANQA=",
+    "ancestry": "C:\\Windows\\CCM\\CcmExec.exe <- C:\\Windows\\System32\\services.exe",
+    "signature": "Signed: Microsoft Windows",
+    "prevalence": "Image present on all managed hosts",
+    "sha256": "c515e8e7d219f83538d2b67a22458dcf00e518f53376ac1706c83df3948be2ed"
+  },
+  "network": "None observed",
+  "context": "Parent CcmExec.exe signature: Microsoft Corporation; parent prevalence: all managed hosts"
+}

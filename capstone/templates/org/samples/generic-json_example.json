@@ -1,0 +1,20 @@
+{
+  "id": "example-0001",
+  "rule": "Suspicious access to LSASS process memory",
+  "severity": "High",
+  "time": "2026-06-03T14:22:10Z",
+  "host": "WS-0042",
+  "host_group": "Workstations",
+  "os": "Windows 11 23H2",
+  "user": "EXAMPLE\\jdoe",
+  "process": {
+    "path": "C:\\Windows\\System32\\rundll32.exe",
+    "command_line": "rundll32.exe C:\\Windows\\System32\\comsvcs.dll, MiniDump 712 C:\\Users\\Public\\d.dmp full",
+    "parents": ["C:\\Windows\\System32\\cmd.exe", "C:\\Users\\jdoe\\Downloads\\tool.exe"],
+    "signature": "Signed: Microsoft Windows",
+    "prevalence": "Image present on all managed hosts",
+    "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+  },
+  "network": "None observed",
+  "context": "Parent tool.exe unsigned, seen on 1 host"
+}

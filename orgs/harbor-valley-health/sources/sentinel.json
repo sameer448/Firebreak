@@ -1,0 +1,23 @@
+{
+  "name": "sentinel",
+  "description": "SIEM SecurityAlert-style webhook (Sentinel-like schema: alert fields at the top, details in ExtendedProperties, entities in a list).",
+  "type": "json",
+  "id_field": "SystemAlertId",
+  "fields": {
+    "detection": "AlertName",
+    "vendor_severity": "AlertSeverity",
+    "timestamp": "TimeGenerated",
+    "host": ["CompromisedEntity", "Entities[0].HostName"],
+    "device_group": "ExtendedProperties.DeviceGroup",
+    "os": ["ExtendedProperties.OSVersion", "Entities[0].OSFamily"],
+    "user": ["ExtendedProperties.User", "Entities[1].Name"],
+    "process_image": "ExtendedProperties.ProcessPath",
+    "command_line": "ExtendedProperties.CommandLine",
+    "process_tree": "ExtendedProperties.ParentChain",
+    "signature": "ExtendedProperties.Signer",
+    "prevalence": "ExtendedProperties.Prevalence",
+    "sha256": "ExtendedProperties.FileHash",
+    "network": "ExtendedProperties.Network",
+    "context": "Description"
+  }
+}

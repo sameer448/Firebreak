@@ -1,0 +1,24 @@
+Triage this alert:
+
+EDR ALERT (JSON)
+{
+  "detection_name": "Volume shadow copy manipulation",
+  "severity": "High",
+  "timestamp": "2026-05-28T21:15:27Z",
+  "device": {
+    "hostname": "SRV-FILE01",
+    "device_group": "File Servers",
+    "os": "Windows Server 2025"
+  },
+  "user": "CORP\\svc_sql",
+  "process": {
+    "image": "C:\\Windows\\System32\\vssadmin.exe",
+    "command_line": "vssadmin.exe resize shadowstorage /for=C: /on=C: /maxsize=401MB",
+    "ancestry": "C:\\Windows\\System32\\cmd.exe <- C:\\ProgramData\\knxud\\bdvvuv.exe",
+    "signature": "Signed: Microsoft Windows",
+    "prevalence": "Image present on all managed hosts",
+    "sha256": "17894bfd857ac1b541c53a41bf12298f852c80f7b45fbf0b0f9ff4b972ab01b4"
+  },
+  "network": "None observed",
+  "context": "Parent C:\\ProgramData\\knxud\\bdvvuv.exe: unsigned, seen on 1 host. Same parent within 30 seconds: wmic shadowcopy delete; bcdedit /set {default} recoveryenabled no; wbadmin delete catalog -quiet"
+}

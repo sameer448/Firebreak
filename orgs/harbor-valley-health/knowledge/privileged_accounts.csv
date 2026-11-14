@@ -1,0 +1,5 @@
+account,owner,team,approved_scope,status
+priv-mokafor,Miriam Okafor,Infrastructure,HV-SRV servers from HV-JMP01,Active
+priv-tbrennan,Tom Brennan,EHR Database,EHR database servers only,Active
+svc-backup,Backup service,Infrastructure,Backup servers; non-interactive,Active
+priv-lchen,Lucas Chen,Infrastructure (former),none,DISABLED: left the organization 2026-05-15; any activity is a security incident

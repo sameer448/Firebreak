@@ -1,0 +1,23 @@
+{
+  "name": "generic-json",
+  "description": "Flat JSON webhook. Edit the paths on the right to match what your SIEM/EDR sends.",
+  "type": "json",
+  "id_field": "id",
+  "fields": {
+    "detection": "rule",
+    "vendor_severity": "severity",
+    "timestamp": "time",
+    "host": "host",
+    "device_group": "host_group",
+    "os": "os",
+    "user": "user",
+    "process_image": "process.path",
+    "command_line": "process.command_line",
+    "process_tree": "process.parents",
+    "signature": "process.signature",
+    "prevalence": "process.prevalence",
+    "sha256": "process.sha256",
+    "network": "network",
+    "context": "context"
+  }
+}

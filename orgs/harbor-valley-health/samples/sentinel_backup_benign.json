@@ -1,0 +1,24 @@
+{
+  "SystemAlertId": "1a2b3c4d-0000-4000-8000-backupjob0001",
+  "AlertName": "Volume shadow copy manipulation",
+  "AlertSeverity": "Medium",
+  "TimeGenerated": "2026-09-14T01:32:05Z",
+  "CompromisedEntity": "HV-EHR-01",
+  "ExtendedProperties": {
+    "DeviceGroup": "EHR Servers",
+    "OSVersion": "Windows Server 2022",
+    "User": "HVH\\svc-backup",
+    "ProcessPath": "C:\\Windows\\System32\\vssadmin.exe",
+    "CommandLine": "vssadmin.exe list shadows",
+    "ParentChain": ["C:\\Program Files\\HVBackup\\agent.exe", "C:\\Windows\\System32\\services.exe"],
+    "Signer": "Signed: Microsoft Windows",
+    "Prevalence": "Image present on all managed hosts",
+    "FileHash": "17894bfd857ac1b541c53a41bf12298f852c80f7b45fbf0b0f9ff4b972ab01b4",
+    "Network": "None observed"
+  },
+  "Entities": [
+    {"Type": "host", "HostName": "HV-EHR-01", "OSFamily": "Windows"},
+    {"Type": "account", "Name": "svc-backup", "NTDomain": "HVH"}
+  ],
+  "Description": "Parent agent.exe signed by HV Backup Software, present on all backup-managed servers; nightly backup window 01:00-03:00"
+}

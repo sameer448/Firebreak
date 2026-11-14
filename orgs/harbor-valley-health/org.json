@@ -1,0 +1,74 @@
+{
+  "id": "harbor-valley-health",
+  "name": "Harbor Valley Health (fictional hospital network)",
+  "description": "Example second organization: different alert sources, playbooks, roster format, asset tiers and escalation policy, running on the same agents.",
+
+  "knowledge": {
+    "triage": ["playbooks/*.md", "knowledge/*.md"],
+    "ir": ["playbooks/*.md", "ir/*.md"]
+  },
+
+  "disposition": {
+    "close_threshold": 0.95,
+    "confidence_score": {"High": 0.9, "Medium": 0.7, "Low": 0.5}
+  },
+
+  "assets": {
+    "default": "medium",
+    "rules": [
+      {"host_prefix": ["HV-DC"], "level": "critical", "tier0": true},
+      {"device_group": ["EHR Servers", "PACS Imaging Servers", "Pharmacy Systems"], "level": "critical"},
+      {"device_group_contains": ["clinical", "nurse station"], "level": "high"},
+      {"device_group_contains": ["server"], "level": "high"},
+      {"device_group_prefix": ["training"], "level": "low"}
+    ]
+  },
+
+  "identity": {
+    "roster_file": "knowledge/privileged_accounts.csv",
+    "account_column": "account",
+    "status_column": "status",
+    "disabled_marker": "DISABLED",
+    "privileged_prefixes": ["priv-", "svc-"],
+    "tier0_accounts": ["krbtgt", "domain admins", "ehr-dba-admins"]
+  },
+
+  "severity": {
+    "levels": {"SEV1": 6, "SEV2": 4, "SEV3": 2},
+    "response": {
+      "SEV1": "page IR on-call and the clinical-systems on-call; CMO informed within 30 minutes",
+      "SEV2": "page IR on-call; acknowledge within 15 minutes",
+      "SEV3": "war-room and case; same business day",
+      "SEV4": "case only"
+    }
+  },
+
+  "escalation_policy": [
+    {"id": "case", "action": "open_case", "when": {"always": true}, "reason": "Every incident gets a ServiceDesk case"},
+    {"id": "war-room", "action": "create_channel", "when": {"severity_at_most": "SEV3"}, "reason": "War-room for SEV1-SEV3"},
+    {"id": "summary", "action": "post_summary", "when": {"severity_at_most": "SEV3"}, "reason": "Brief the war-room"},
+    {"id": "page-ir", "action": "page_oncall", "target": "HVH IR on-call (security-primary)",
+     "when": {"severity_at_most": "SEV2"}, "reason": "SEV1-SEV2 page IR on-call"},
+    {"id": "page-clinical", "action": "page_oncall", "target": "Clinical systems on-call (biomed-ehr)",
+     "when": {"severity_at_most": "SEV1"}, "reason": "Patient-care systems may be affected"},
+    {"id": "cmo", "action": "add_stakeholder", "target": "Chief Medical Officer",
+     "when": {"severity_at_most": "SEV1"}, "reason": "SEV1 can affect patient care"},
+    {"id": "hipaa", "action": "add_stakeholder", "target": "HIPAA Privacy Officer",
+     "when": {"signals_any": ["exfiltration"]}, "reason": "Possible PHI disclosure: HIPAA breach assessment"},
+    {"id": "insurer", "action": "add_stakeholder", "target": "Cyber-insurance carrier",
+     "when": {"signals_any": ["destructive"]}, "reason": "Ransomware/destructive incident"},
+    {"id": "iam", "action": "add_stakeholder", "target": "IAM lead",
+     "when": {"signals_any": ["credential_theft", "disabled_account"]}, "reason": "Credential theft / privileged account"},
+    {"id": "summary-gated-sev1", "action": "notify_external", "target": "State health department liaison",
+     "when": {"severity_at_most": "SEV1", "signals_any": ["destructive"]},
+     "reason": "Ransomware affecting care delivery may require regulator notification"}
+  ],
+
+  "actuators": {
+    "chat": {"type": "slack_webhook", "url_env": "HVH_SLACK_WEBHOOK_URL"},
+    "pager": {"type": "pagerduty", "routing_key_env": "HVH_PAGERDUTY_ROUTING_KEY"},
+    "case": {"type": "mock"}
+  },
+
+  "ingest": {"api_key_env": "HVH_INGEST_KEY"}
+}

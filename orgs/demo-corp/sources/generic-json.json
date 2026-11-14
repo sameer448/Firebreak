@@ -1,0 +1,23 @@
+{
+  "name": "generic-json",
+  "description": "Flat JSON webhook from any SIEM/SOAR that can template its output. Field names map one-to-one.",
+  "type": "json",
+  "id_field": "id",
+  "fields": {
+    "detection": "rule",
+    "vendor_severity": "severity",
+    "timestamp": "time",
+    "host": "host",
+    "device_group": "host_group",
+    "os": "os",
+    "user": "user",
+    "process_image": "process.path",
+    "command_line": "process.command_line",
+    "process_tree": "process.parents",
+    "signature": "process.signature",
+    "prevalence": "process.prevalence",
+    "sha256": "process.sha256",
+    "network": "network",
+    "context": "context"
+  }
+}

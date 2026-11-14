@@ -1,0 +1,24 @@
+{
+  "SystemAlertId": "8f2c1e7a-4b6d-4c1e-9a3f-1d2e3f4a5b6c",
+  "AlertName": "Volume shadow copy manipulation",
+  "AlertSeverity": "High",
+  "TimeGenerated": "2026-09-14T02:47:12Z",
+  "CompromisedEntity": "HV-EHR-02",
+  "ExtendedProperties": {
+    "DeviceGroup": "EHR Servers",
+    "OSVersion": "Windows Server 2022",
+    "User": "HVH\\priv-xadmin",
+    "ProcessPath": "C:\\Windows\\System32\\vssadmin.exe",
+    "CommandLine": "vssadmin.exe delete shadows /all /quiet",
+    "ParentChain": ["C:\\Windows\\System32\\cmd.exe", "C:\\ProgramData\\hvupd\\svcupd.exe"],
+    "Signer": "Signed: Microsoft Windows",
+    "Prevalence": "Image present on all managed hosts",
+    "FileHash": "17894bfd857ac1b541c53a41bf12298f852c80f7b45fbf0b0f9ff4b972ab01b4",
+    "Network": "None observed"
+  },
+  "Entities": [
+    {"Type": "host", "HostName": "HV-EHR-02", "OSFamily": "Windows"},
+    {"Type": "account", "Name": "priv-xadmin", "NTDomain": "HVH"}
+  ],
+  "Description": "Parent C:\\ProgramData\\hvupd\\svcupd.exe unsigned, first seen 10 minutes ago on 1 host. Same parent within 60 seconds: bcdedit /set {default} recoveryenabled no; wbadmin delete catalog -quiet"
+}

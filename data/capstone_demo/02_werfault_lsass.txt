@@ -1,0 +1,16 @@
+Triage this alert:
+
+EDR ALERT
+Detection: Suspicious access to LSASS process memory
+Vendor severity: High
+Timestamp: 2026-04-27T07:00:39Z
+Host: SRV-SQL08 (Device group: Database Servers, OS: Windows Server 2025)
+User: NT AUTHORITY\SYSTEM
+Process: C:\Windows\System32\WerFault.exe
+Command line: C:\Windows\system32\WerFault.exe -u -p 641 -s 213
+Process tree: C:\Windows\System32\svchost.exe -k WerSvcGroup <- C:\Windows\System32\services.exe
+Signature: Signed: Microsoft Windows
+Prevalence: Image present on all managed hosts
+SHA256: 43672c014b736ad7993cfe6d86c19af94e19a627dafa43938859c911282a1cb3
+Network: None observed
+Additional context: Application Error event 1000 for lsass.exe logged 2 seconds earlier; output in C:\ProgramData\Microsoft\Windows\WER\ReportQueue

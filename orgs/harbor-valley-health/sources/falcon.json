@@ -1,0 +1,23 @@
+{
+  "name": "falcon",
+  "description": "EDR detection-style webhook (Falcon-like schema: device block plus a list of behaviors; the first behavior is used).",
+  "type": "json",
+  "id_field": "detection_id",
+  "fields": {
+    "detection": ["behaviors[0].display_name", "behaviors[0].scenario"],
+    "vendor_severity": "max_severity_displayname",
+    "timestamp": ["behaviors[0].timestamp", "created_timestamp"],
+    "host": "device.hostname",
+    "device_group": "device.groups[0]",
+    "os": "device.os_version",
+    "user": "behaviors[0].user_name",
+    "process_image": "behaviors[0].filepath",
+    "command_line": "behaviors[0].cmdline",
+    "process_tree": "behaviors[0].parent_chain",
+    "signature": "behaviors[0].signer",
+    "prevalence": "behaviors[0].prevalence",
+    "sha256": "behaviors[0].sha256",
+    "network": "behaviors[0].network_summary",
+    "context": "behaviors[0].description"
+  }
+}

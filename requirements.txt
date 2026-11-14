@@ -1,0 +1,9 @@
+# Runtime dependencies (Python 3.8 - 3.12). Install into a virtual environment:
+#   python -m venv .venv && .venv/bin/pip install -r requirements.txt       (macOS/Linux)
+#   python -m venv .venv; .venv\Scripts\pip install -r requirements.txt      (Windows)
+faiss-cpu>=1.7.4
+numpy>=1.24
+ollama>=0.4,<1
+fastapi>=0.110,<1
+uvicorn>=0.29
+httpx>=0.27          # used by ollama and by the API tests (fastapi TestClient)

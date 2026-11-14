@@ -1,0 +1,25 @@
+{
+  "detection_id": "ldt:hvh0000000000000000000000000000:4402",
+  "max_severity_displayname": "High",
+  "created_timestamp": "2026-09-10T19:20:44Z",
+  "device": {
+    "hostname": "HV-NS-3E-07",
+    "os_version": "Windows 11 23H2",
+    "groups": ["Clinical Nurse Stations"]
+  },
+  "behaviors": [
+    {
+      "display_name": "Suspicious access to LSASS process memory",
+      "timestamp": "2026-09-10T19:20:41Z",
+      "user_name": "HVH\\priv-lchen",
+      "filepath": "C:\\Windows\\System32\\rundll32.exe",
+      "cmdline": "rundll32.exe C:\\Windows\\System32\\comsvcs.dll, MiniDump 688 C:\\Windows\\Temp\\ns.dmp full",
+      "parent_chain": ["C:\\Windows\\System32\\cmd.exe", "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"],
+      "signer": "Signed: Microsoft Windows",
+      "prevalence": "Image present on all managed hosts",
+      "sha256": "2b2f4c1d9e8a7b6c5d4e3f2a1b0c9d8e7f6a5b4c3d2e1f0a9b8c7d6e5f4a3b2c",
+      "network_summary": "None observed",
+      "description": "Target lsass.exe, GrantedAccess 0x1FFFFF; dump file ns.dmp 51 MB created during shift change"
+    }
+  ]
+}

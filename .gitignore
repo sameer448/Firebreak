@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# Locally installed libraries (legacy private install folder used during development)
+.rag_libs/
+
+# Built vector indexes: rebuild with `python -m capstone --org <id> org ingest` / `python rag.py ingest`
+rag_index/
+rag_index_ir/
+orgs/*/.index/
+
+# Runtime state: audit logs, incidents, approvals (per org)
+runs/
+
+# Evaluation outputs (regenerate with capstone.eval_disposition / evaluate.py), except the cached
+# disposition answers, which are published so the Evaluation page works without a 2-hour model run
+results/*
+!results/disposition_test.jsonl
+
+# Model weights and fine-tuning outputs
+*.gguf
+*.safetensors
+outputs/
+soc-triage-lora/
+
+# Secrets
+.env
+*.env
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

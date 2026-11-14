@@ -1,0 +1,16 @@
+Triage this alert:
+
+EDR ALERT
+Detection: Remote service creation (PsExec-style)
+Vendor severity: High
+Timestamp: 2026-08-17T17:19:01Z
+Host: WS-SLS-118 (Device group: Sales Workstations, OS: Windows 11 23H2)
+User: CORP\adm-hschmidt
+Process: C:\Users\adm-hschmidt\Downloads\PsExec64.exe
+Command line: PsExec64.exe \\SRV-APP12 -s cmd /c "ipconfig /all & net localgroup administrators"
+Process tree: C:\Windows\System32\cmd.exe <- C:\Windows\explorer.exe
+Signature: Signed: Microsoft Corporation (original filename PsExec64.exe)
+Prevalence: Image seen on 2 hosts in last 30 days
+SHA256: ed2cf3dfc8df07413df4f73ef8c9fcd698014efb68fefd19ae3e8e5df28fb36d
+Network: SMB to SRV-APP12; PsExec64.exe downloaded from live.sysinternals.com 5 minutes earlier
+Additional context: Single target SRV-APP12

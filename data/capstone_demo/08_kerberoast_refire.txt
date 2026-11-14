@@ -1,0 +1,14 @@
+Triage this alert:
+
+EDR ALERT
+Detection: Suspicious Kerberos service ticket requests
+Vendor severity: High
+Timestamp: 2026-05-14T03:12:44Z
+Host: WS-SLS-091 (Device group: Sales Workstations, OS: Windows 11 23H2)
+User: CORP\tmurphy
+Process: C:\Users\tmurphy\AppData\Local\Temp\r.exe
+Command line: r.exe kerberoast /outfile:C:\Users\Public\h2.txt /rc4opsec
+Process tree: powershell.exe <- cmd.exe <- explorer.exe
+Signature: Unsigned
+SHA256: 6f1c0a9e2b7d4c3e8a5f9b0d1e2c3a4b5d6e7f8091a2b3c4d5e6f708192a3b4c
+Additional context: 12 TGS requests with RC4 encryption for distinct service accounts within 5 seconds; output file h2.txt written; same binary as an alert 31 minutes earlier

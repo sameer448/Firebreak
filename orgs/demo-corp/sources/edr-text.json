@@ -1,0 +1,5 @@
+{
+  "name": "edr-text",
+  "description": "Demo Corp EDR export: the key/value text and JSON layouts the triage model was trained on. Parsed by the built-in parser and sent to the model verbatim.",
+  "type": "builtin-edr-text"
+}
